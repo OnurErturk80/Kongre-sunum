@@ -36,14 +36,18 @@ if(hk){
     el('gHat').className=m?'dugme ikincil':'dugme';el('gMat').className=m?'dugme':'dugme ikincil';bl(e);};
   el('gHat').onclick=function(e){gorunum(false,e);};
   el('gMat').onclick=function(e){gorunum(true,e);};
-  /* → / ← tuşlarıyla da duraklar mouse tıklamasıyla aynı sırayla açılsın */
-  var adimEls=[].slice.call(hk.querySelectorAll('.adimler [data-adim]'));
-  adimEls.forEach(function(mk,idx){
-    new MutationObserver(function(){
-      if(mk.classList.contains('goster'))sec(idx);
-      else if(idx>0)sec(idx-1);else sec(6);
-    }).observe(mk,{attributes:true,attributeFilter:['class']});
-  });
+  /* → / ← tuşlarıyla da duraklar mouse tıklamasıyla aynı sırayla açılsın (statik dışa aktarımda
+     disa_aktar.py tüm [data-adim]'leri tek seferde "goster" yapar; o zaman adım adım izlemenin
+     anlamı yok, varsayılan seçim kalsın) */
+  if(!statik){
+    var adimEls=[].slice.call(hk.querySelectorAll('.adimler [data-adim]'));
+    adimEls.forEach(function(mk,idx){
+      new MutationObserver(function(){
+        if(mk.classList.contains('goster'))sec(idx);
+        else if(idx>0)sec(idx-1);else sec(6);
+      }).observe(mk,{attributes:true,attributeFilter:['class']});
+    });
+  }
   sec(6);
 }
 

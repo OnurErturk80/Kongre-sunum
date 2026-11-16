@@ -10,7 +10,7 @@
  {
   "no": 2,
   "soru": 1,
-  "kisa": "1 · Aşama hattı",
+  "kisa": "1 · Aşama Hattı",
   "baslik": "Yapay zekâ hattın her durağında; RKÇ yalnız embriyo seçiminde",
   "sure": 66,
   "yedek": false
@@ -26,7 +26,7 @@
  {
   "no": 4,
   "soru": 2,
-  "kisa": "2 · Ülke ızgarası",
+  "kisa": "2 · Ülke Izgarası",
   "baslik": "YZ yazılımları 30’dan fazla ülkede, yüzlerce klinikte duyuruluyor",
   "sure": 60,
   "yedek": false
@@ -34,7 +34,7 @@
  {
   "no": 5,
   "soru": 2,
-  "kisa": "2 · Ölçülen kullanım",
+  "kisa": "2 · Ölçülen Kullanım",
   "baslik": "Hakemli veride ölçüm az: Japonya’da 345 tesisten 57’si YZ skoru kullanıyor",
   "sure": 60,
   "yedek": false
@@ -42,7 +42,7 @@
  {
   "no": 6,
   "soru": 3,
-  "kisa": "3 · Canlı doğum",
+  "kisa": "3 · Canlı Doğum",
   "baslik": "Canlı doğumda fark yok: en güçlü kanıt bunu söylüyor",
   "sure": 65,
   "yedek": false
@@ -50,7 +50,7 @@
  {
   "no": 7,
   "soru": 3,
-  "kisa": "3 · Değişen ne",
+  "kisa": "3 · Değişen Ne",
   "baslik": "Değişen bebek sayısı değil: süre, tutarlılık, ilaç",
   "sure": 55,
   "yedek": false
@@ -58,7 +58,7 @@
  {
   "no": 8,
   "soru": 3,
-  "kisa": "3 · Etki panosu",
+  "kisa": "3 · Etki Panosu",
   "baslik": "Neye etki ediyor? Kanıtla gösterilen tek kazanç hız",
   "sure": 60,
   "yedek": false
@@ -66,7 +66,7 @@
  {
   "no": 9,
   "soru": 4,
-  "kisa": "4 · AUC cetveli",
+  "kisa": "4 · AUC Cetveli",
   "baslik": "Görmede güçlü, kehanette orta: AUC çoğunlukla 0.6–0.7",
   "sure": 75,
   "yedek": false
@@ -74,7 +74,7 @@
  {
   "no": 10,
   "soru": 4,
-  "kisa": "4 · Aynı model, iki sayı",
+  "kisa": "4 · Aynı Model, İki Sayı",
   "baslik": "Aynı model, iki sayı: parlaklığı payda ve doğrulama belirliyor",
   "sure": 60,
   "yedek": false
@@ -82,7 +82,7 @@
  {
   "no": 11,
   "soru": 4,
-  "kisa": "4 · Beş kontrol",
+  "kisa": "4 · Beş Kontrol",
   "baslik": "Bir sayıya güvenmeden önce beş kontrol",
   "sure": 45,
   "yedek": false
@@ -90,7 +90,7 @@
  {
   "no": 12,
   "soru": 5,
-  "kisa": "5 · Elle yapılan iş",
+  "kisa": "5 · Elle Yapılan İş",
   "baslik": "Elle yapılan altı iş, kayıt girilirken kendiliğinden oluyor",
   "sure": 50,
   "yedek": false
@@ -98,7 +98,7 @@
  {
   "no": 13,
   "soru": 5,
-  "kisa": "5 · Geliştirme döngüsü",
+  "kisa": "5 · Geliştirme Döngüsü",
   "baslik": "İhtiyacı embriyolog söyledi, yapay zekâ kodladı, embriyolog doğruladı",
   "sure": 45,
   "yedek": false
@@ -106,7 +106,7 @@
  {
   "no": 14,
   "soru": 5,
-  "kisa": "5 · KPI takibi",
+  "kisa": "5 · KPI Takibi",
   "baslik": "Program 5 oranı her ay hesaplıyor; Vienna’yla eşleşmesi kısmi",
   "sure": 45,
   "yedek": false
@@ -114,7 +114,7 @@
  {
   "no": 15,
   "soru": 5,
-  "kisa": "5 · İleri istatistik",
+  "kisa": "5 · İleri İstatistik",
   "baslik": "CUSUM düşüşü aylık ortalamadan önce yakalıyor; yaş ayarı haksızlığı düzeltiyor",
   "sure": 55,
   "yedek": false
@@ -138,7 +138,7 @@
  {
   "no": 18,
   "soru": null,
-  "kisa": "Yedek · Yöntem ve sınırlar",
+  "kisa": "Yedek · Yöntem ve Sınırlar",
   "baslik": "Yöntem: her sayı nereden geliyor, ne kadar okundu?",
   "sure": 0,
   "yedek": true
@@ -162,7 +162,7 @@
  {
   "no": 21,
   "soru": null,
-  "kisa": "Yedek · Beklenen sorular",
+  "kisa": "Yedek · Beklenen Sorular",
   "baslik": "Beklenen sorular",
   "sure": 0,
   "yedek": true
@@ -170,7 +170,7 @@
  {
   "no": 22,
   "soru": null,
-  "kisa": "Yedek · Oran ölçeği",
+  "kisa": "Yedek · Oran Ölçeği",
   "baslik": "Oran ölçeğinde de tablo aynı: güven aralıkları 1’i içeriyor",
   "sure": 0,
   "yedek": true
@@ -186,7 +186,7 @@
  {
   "no": 24,
   "soru": null,
-  "kisa": "Yedek · Kalite kontrol izlemi",
+  "kisa": "Yedek · Kalite Kontrol İzlemi",
   "baslik": "Model de izlenir: kamera değişince uyum düşer, yerel etiketle toparlanır",
   "sure": 0,
   "yedek": true

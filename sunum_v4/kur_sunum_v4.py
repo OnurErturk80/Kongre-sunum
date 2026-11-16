@@ -470,7 +470,8 @@ DURAK = [
     dict(ad="Hasta iletişimi", s="ret", c=0, amac="Hasta sorularını yanıtlamak, danışmanlık", arac="ChatGPT; tıbbi dil modelleri", olg="Araştırma",
          kanit="Kesitsel değerlendirme", sayi=f'{d(B1,"chervenak_2023_ifade")} ifadeden {d(B1,"chervenak_2023_hatali")}’u hatalı'),
 ]
-sahne(1, 66, "1 · Aşama hattı", f'Yapay zekâ hattın her durağında; {M("RKÇ yalnız embriyo seçiminde")}', '''
+HAT_ADIM = "".join(f'<i data-adim="{i+1}"></i>' for i in range(len(DURAK)))
+sahne(1, 66, "1 · Aşama Hattı", f'Yapay zekâ hattın her durağında; {M("RKÇ yalnız embriyo seçiminde")}', '''
 <div class="hatk" id="hatk">
   <div class="hatcizgi"></div>
   <div class="matris">
@@ -480,6 +481,7 @@ sahne(1, 66, "1 · Aşama hattı", f'Yapay zekâ hattın her durağında; {M("RK
     <em>eşdeğerlik gösterilemedi</em>
   </div>
   <div id="duraklar"></div>
+  <div class="adimler" aria-hidden="true">''' + HAT_ADIM + '''</div>
   <div class="hatkart" id="hatkart">
     <div><h3 id="hkAd"></h3><p id="hkAmac"></p></div>
     <div><small>ÖRNEK ARAÇ</small><p id="hkArac"></p><small style="margin-top:14px">OLGUNLUK</small><p id="hkOlg"></p></div>
@@ -495,7 +497,7 @@ sahne(1, 66, "1 · Aşama hattı", f'Yapay zekâ hattın her durağında; {M("RK
   </div>
 </div>''',
       "Bir IVF siklusunu baştan sona bir hat gibi düşünelim. Bugün bu hattın neredeyse her durağında bir yapay zekâ uygulaması var. İlk görüşmede canlı doğum olasılığını hesaplayan modeller var. Stimülasyonda FSH dozunu ve tetik gününü öneren araçlar, ultrasonda folikülleri sayıp ölçen yazılımlar var. Laboratuvarda oositi fotoğrafından puanlayan, spermi seçen ve ICSI’yi robota yaptıran sistemler; embriyoyu sıralayan, hatta biyopsi yapmadan ploidiyi tahmin etmeye çalışan modeller var. Transfer tarafında endometriyum görüntüsünden gebelik tahmini, arka planda KPI’lar için erken uyarı, ön tarafta da hastaya yanıt veren dil modelleri var. Ama şekillere bakın; her şekil o duraktaki en güçlü kanıtın türü. Yayımlanmış randomize çalışmayı yalnız embriyo seçiminde bulduk; o da bin altmış altı hastada eşdeğerliği gösteremedi. [“Kanıt × olgunluk” düğmesi] Folikül sayımı ve oosit puanlaması ticari ürün oldu, ama kanıtları gözlemsel. ICSI robotu kavram kanıtı aşamasında. Kriyo tanklarında konuşulan şey yapay zekâ değil, sensörle izleme. Yani doğru soru “nerede kullanılıyor” değil, “hangi durakta, ne kadar kanıtla kullanılıyor”.",
-      "12 durağın kaynakları yedek kaynakçada · PubMed taraması 14 Kasım 2026 (sistematik değil) · olgunluk sınıflaması bizim değerlendirmemizdir", ilk=True)
+      "12 durağın kaynakları yedek kaynakçada · PubMed taraması 14 Kasım 2026 (sistematik değil) · olgunluk sınıflaması bizim değerlendirmemizdir · RKÇ = randomize kontrollü çalışma", ilk=True)
 
 # ===================== 1.2 İLKLER =====================
 sahne(1, 54, "1 · İlkler", f'Otuz yılda tahminden robota; {M("kırılma 2018–2019’da")} geldi', f'''
@@ -514,7 +516,7 @@ def ulke(ad, tur, liste="", sinif=""):
     return f'<div class="ulke {sinif}" data-tur="{tur}{liste}"><b>{ad}</b><div class="nk">{nk}</div></div>'
 
 
-sahne(2, 60, "2 · Ülke ızgarası", f'YZ yazılımları {M("30’dan fazla ülkede")}, yüzlerce klinikte duyuruluyor', f'''
+sahne(2, 60, "2 · Ülke Izgarası", f'YZ yazılımları {M("30’dan fazla ülkede")}, yüzlerce klinikte duyuruluyor', f'''
 <div class="yay">
   <div>
     <div class="bolgeler">
@@ -540,7 +542,7 @@ sahne(2, 60, "2 · Ülke ızgarası", f'YZ yazılımları {M("30’dan fazla ül
 hn = [(d(B2, "japonya_davet_tesis"), "tesise anket gönderildi (2022–23)"), (d(B2, "japonya_yanit_tesis"), "tesis yanıt verdi"),
       (d(B2, "japonya_tlt_tesis"), "tesiste time-lapse var"), (d(B2, "japonya_tlt_ile_embriyo_degerlendirme"), "tesis embriyoyu time-lapse ile değerlendiriyor"),
       (d(B2, "japonya_tlt_artı_yz_skor_tesis"), "tesis buna YZ skoru ekliyor")]
-sahne(2, 60, "2 · Ölçülen kullanım", f'Hakemli veride ölçüm az: Japonya’da {hn[1][0]} tesisten {M(str(hn[4][0]) + "’si")} YZ skoru kullanıyor', f'''
+sahne(2, 60, "2 · Ölçülen Kullanım", f'Hakemli veride ölçüm az: Japonya’da {hn[1][0]} tesisten {M(str(hn[4][0]) + "’si")} YZ skoru kullanıyor', f'''
 <div class="olc">
   <div class="huni">{"".join(f'<div class="{"son" if i == 4 else ""}"><b>{v}</b><i style="width:{v/hn[0][0]*540:.0f}px"></i><span>{ad}</span></div>' for i, (v, ad) in enumerate(hn))}
     <p class="kaynakk">Japonya ulusal anketi · ham sayılar; yüzde yok, çünkü paydalar değişiyor</p></div>
@@ -557,7 +559,7 @@ sahne(2, 60, "2 · Ölçülen kullanım", f'Hakemli veride ölçüm az: Japonya�
 # ===================== 3.1 ORMAN =====================
 fa = B3["_grafik_verisi"]["freezeall_ic_grafik"]
 cubuk = lambda v, sinif="": f'<i class="{sinif}" style="width:{v*3.3:.0f}px"></i><b>{y(v)}</b>'
-sahne(3, 65, "3 · Canlı doğum", f'Canlı doğumda {M("fark yok")}: en güçlü kanıt bunu söylüyor', f'''
+sahne(3, 65, "3 · Canlı Doğum", f'Canlı doğumda {M("fark yok")}: en güçlü kanıt bunu söylüyor', f'''
 <div class="orm">
   <div class="sekilk">{orman()}</div>
   <div class="altgrup" data-adim="1">
@@ -576,7 +578,7 @@ sahne(3, 65, "3 · Canlı doğum", f'Canlı doğumda {M("fark yok")}: en güçl�
 sm, sy = d(B3, "illingworth_sure_morfoloji_sn"), d(B3, "illingworth_sure_yz_sn")
 fs = d(B3, "bixby_toplam_FSH_IU"); mi = d(B3, "bixby_MII"); al = d(B3, "bormann_alfa")
 SMAX = 370
-sahne(3, 55, "3 · Değişen ne", f'Değişen bebek sayısı değil: {M("süre")}, tutarlılık, ilaç', f'''
+sahne(3, 55, "3 · Değişen Ne", f'Değişen bebek sayısı değil: {M("süre")}, tutarlılık, ilaç', f'''
 <div class="degisen">
   <div class="krono" id="krono">
     <h3>Embriyo değerlendirme süresi <small>hasta başına, saniye · 3 laboratuvar</small></h3>
@@ -600,7 +602,7 @@ PANO = [("Klinik", [("Canlı doğum, gebelik, düşük", "= fark yok", "esit", "
         ("Lab · ilaç · maliyet", [("Değerlendirme süresi", "↓ yaklaşık 10 kat", "var", "d", "RKÇ alt çalışması"), ("Tutarlılık", "karışık", "isaret", "b", "retrospektif"), ("FSH miktarı", "↓ yaklaşık %10", "isaret", "b", "tarihsel kontrol"), ("Maliyet", "↑ artıyor", "olumsuz", "y", "ekonomik analiz")]),
         ("Hasta · meslek", [("Hasta güveni", f'%{d(B3,"cromack_guven_yuzde")} güveniyor', "isaret", "b", f'anket, {d(B3,"cromack_n")} hasta'), ("Beceri kaybı, sorumluluk", "ölçülmedi", "yok", "b", "etik yazın")])]
 pano = "".join(f'<div class="pg" {"" if gi == 0 else f"data-adim=\"{gi}\""}><h4>{ad}</h4><div>' + "".join(f'<div class="ps"><span>{c}</span><b class="e-{s}">{e}</b><em><i class="g{g}"></i>{k}</em></div>' for c, e, s, g, k in sat) + '</div></div>' for gi, (ad, sat) in enumerate(PANO))
-sahne(3, 60, "3 · Etki panosu", f'Neye etki ediyor? Kanıtla gösterilen tek kazanç {M("hız")}', f'''
+sahne(3, 60, "3 · Etki Panosu", f'Neye etki ediyor? Kanıtla gösterilen tek kazanç {M("hız")}', f'''
 <div class="pano">{pano}</div>
 <div class="plej"><span><b class="e-var">kanıtla gösterildi</b></span><span><b class="e-esit">fark yok</b></span><span><b class="e-isaret">işaret var, kontrolsüz</b></span><span><b class="e-olumsuz">olumsuz</b></span><span><b class="e-yok">ölçülmedi</b></span><span class="g">kanıt gücü: <i class="gd"></i>güçlü <i class="gy"></i>orta <i class="gb"></i>zayıf</span></div>
 <p class="soz" data-adim="3">Daha çok bebek getirdiği gösterilmedi; değişen <b>hız ve iş akışı.</b></p>
@@ -610,14 +612,14 @@ sahne(3, 60, "3 · Etki panosu", f'Neye etki ediyor? Kanıtla gösterilen tek ka
       sinif="son")
 
 # ===================== 4.1 AUC CETVELİ =====================
-sahne(4, 75, "4 · AUC cetveli", f'Görmede güçlü, kehanette orta: AUC çoğunlukla {M(f(d(B4,"berntsen_klinik_alt"),1) + "–" + f(d(B4,"mina_auc"),1))}', f'''
+sahne(4, 75, "4 · AUC Cetveli", f'Görmede güçlü, kehanette orta: AUC çoğunlukla {M(f(d(B4,"berntsen_klinik_alt"),1) + "–" + f(d(B4,"mina_auc"),1))}', f'''
 <div class="goz"><span class="bant">GÖZ İŞİ<small>uzman etiketine uyum</small></span>
   <p><i></i>Folikül ölçümü (≥ 10 mm): <b>F1 {y(d(B4,"follis_f1_10mm"))}</b></p>
   <p><i></i>Sperm morfolojisi: çoğu çalışmada <b>&gt; %90 doğruluk</b></p></div>
 <div class="keh"><span class="bant sari">KEHANET İŞİ<small>sonuca göre AUC</small></span><div class="sekilk">{auc_cetveli()}</div></div>
 <p class="acik">AUC {f(d(B4,"berntsen_kid"))} = rastgele bir tutan ve bir tutmayan embriyodan, tutanı %67 olasılıkla üste koyar.</p>''',
-      "Doğruluk sorusuna tek bir sayıyla cevap veremiyoruz, çünkü yapay zekâ labda iki ayrı iş yapıyor. Birincisi göz işi: bizim gördüğümüzü ölçmek, saymak, sınıflamak. Folikül ölçümünde on milimetrenin üstündeki foliküllerde F1 skoru yüzde doksan üç. Sperm morfolojisinde çalışmaların çoğu yüzde doksanın üstünde doğruluk bildiriyor. Burada referans, uzmanın kendi etiketi. İkinci iş kehanet: bu embriyo tutacak mı, öploid mi, bu hasta bebek sahibi olacak mı? Burada referans biyolojinin kendisi ve sayılar belirgin biçimde düşüyor. Cetveli şöyle okuyun: 0.5 yazı-tura, 1 kusursuz. AUC 0.67 şu demek: transfer edilmiş embriyolardan rastgele bir tutan ve bir tutmayan seçersek, model tutana yüzde altmış yedi olasılıkla daha yüksek puan veriyor. Transfer edilen embriyolarda kalp atımı tahmini 0.60 ile 0.76 arasında. Ploidi tahmini başka merkezlerde 0.70 civarında; meta-analiz 0.80 diyor, ama çalışmaların çoğu kendi verisinde test edilmiş. Oositten öploidi tahmini tek başına 0.54, yani yazı-turaya çok yakın. Tedavi öncesi canlı doğum tahmini de, klasik modelle de yapay zekâyla da 0.67 ile 0.75 arasında kalıyor.",
-      "Wygocki 2026 · Varzaneh 2026 · Berntsen 2022 · Ueno 2021 · Mina 2025 · Thirumalaraju 2025 · Barnes 2023 · Bamford 2023 · Ma 2024 · Xin 2024 · Setti 2026 · Cimadomo 2025 · Cai 2024 · Ratna 2023. Çoğunda üretici firma yazarı var; PMID’ler yedek kaynakçada",
+      "Doğruluk sorusuna tek bir sayıyla cevap veremiyoruz, çünkü yapay zekâ labda iki ayrı iş yapıyor. Birincisi göz işi: bizim gördüğümüzü ölçmek, saymak, sınıflamak. Folikül ölçümünde on milimetrenin üstündeki foliküllerde F1 skoru yüzde doksan üç. Sperm morfolojisinde çalışmaların çoğu yüzde doksanın üstünde doğruluk bildiriyor. Burada referans, uzmanın kendi etiketi. İkinci iş kehanet: bu embriyo tutacak mı, öploid mi, bu hasta bebek sahibi olacak mı? Burada referans biyolojinin kendisi ve sayılar belirgin biçimde düşüyor. Cetveli şöyle okuyun: 0.5 yazı-tura, 1 kusursuz. AUC, yani eğri altında kalan alan, bir ayırt edicilik ölçüsü; 0.67 şu demek: transfer edilmiş embriyolardan rastgele bir tutan ve bir tutmayan seçersek, model tutana yüzde altmış yedi olasılıkla daha yüksek puan veriyor. Transfer edilen embriyolarda kalp atımı tahmini 0.60 ile 0.76 arasında. Ploidi tahmini başka merkezlerde 0.70 civarında; meta-analiz 0.80 diyor, ama çalışmaların çoğu kendi verisinde test edilmiş. Oositten öploidi tahmini tek başına 0.54, yani yazı-turaya çok yakın. Tedavi öncesi canlı doğum tahmini de, klasik modelle de yapay zekâyla da 0.67 ile 0.75 arasında kalıyor.",
+      "Wygocki 2026 · Varzaneh 2026 · Berntsen 2022 · Ueno 2021 · Mina 2025 · Thirumalaraju 2025 · Barnes 2023 · Bamford 2023 · Ma 2024 · Xin 2024 · Setti 2026 · Cimadomo 2025 · Cai 2024 · Ratna 2023. Çoğunda üretici firma yazarı var; PMID’ler yedek kaynakçada · AUC = eğri altında kalan alan, ayırt edicilik ölçüsü",
       ilk=True, sinif="s41")
 
 # ===================== 4.2 AYNI MODEL İKİ SAYI =====================
@@ -630,7 +632,7 @@ DURUM = [
     dict(et="Hastayı ayır", sayi=f'{f(g4("demo_gbm_rastgele"),3)} → {f(g4("demo_gbm_hasta"),3)}', ac="Aynı hastanın embriyoları hem eğitimde hem testte olunca başarı olduğundan iyi görünür.", sentetik=1),
 ]
 dg = "".join(f'<button class="dr4{" sec" if i == 0 else ""}" data-i="{i}"><span>{dd["et"].split(" · ")[0]}{" <u>SENTETİK</u>" if dd.get("sentetik") else ""}</span><b>{dd["sayi"]}</b></button>' for i, dd in enumerate(DURUM))
-sahne(4, 60, "4 · Aynı model, iki sayı", f'Aynı model, iki sayı: parlaklığı {M("payda ve doğrulama")} belirliyor', f'''
+sahne(4, 60, "4 · Aynı Model, İki Sayı", f'Aynı model, iki sayı: parlaklığı {M("payda ve doğrulama")} belirliyor', f'''
 <div class="ikisayi">
   <div class="bulutk">{nokta_bulutu()}<p class="kaynakk">Her nokta ≈ 100 embriyo · test seti {n(g4("berntsen_test_embriyo"))} · <span class="kidl">sarı: transfer edilen {n(g4("berntsen_test_kid"))}</span></p></div>
   <div class="buyuk"><small id="d4et">{DURUM[0]["et"]}</small><div class="rk" id="d4sayi">{DURUM[0]["sayi"]}</div><div id="d4ek"></div><p id="d4ac">{DURUM[0]["ac"]}</p></div>
@@ -646,7 +648,7 @@ KONTROL = [("Başka merkezde test edildi mi?", f'Oosit sayısı tahmini: <b>{g4(
            ("Kalibre mi? %40 dediği %40 mı?", f'Oosit skoru tek başına: eğim <b>{f(g4("magenta_egim_tek"),3)}</b> · ideal 1'),
            ("Benim labımda doğrulandı mı?", f'Aynı model, {len(g4("berntsen_klinik_listesi"))} merkezde <b>{f(g4("berntsen_klinik_alt"))}–{f(g4("berntsen_klinik_ust"))}</b>'),
            ("Zamanla izleniyor mu?", f'{g4("thirumalaraju_kopya")} kopya model: sıralama uyumu <b>W ≈ {f(g4("thirumalaraju_w"))}</b>')]
-sahne(4, 45, "4 · Beş kontrol", f'Bir sayıya güvenmeden önce {M("beş kontrol")}', f'''
+sahne(4, 45, "4 · Beş Kontrol", f'Bir sayıya güvenmeden önce {M("beş kontrol")}', f'''
 <div class="kontrol">{"".join(f'<div><b>{i}</b><h3>{s}</h3><p data-adim="{i}">{k}</p></div>' for i, (s, k) in enumerate(KONTROL, 1))}</div>
 <p class="soz kck" data-adim="6">Basit model ≥ derin öğrenme: ploidide lojistik regresyon <b>{f(g4("bamford_lr"))}</b>, derin öğrenme <b>{f(g4("bamford_derin"))}</b>.</p>
 {kopru(5)}''',
@@ -657,7 +659,7 @@ sahne(4, 45, "4 · Beş kontrol", f'Bir sayıya güvenmeden önce {M("beş kontr
 ISLER = [("Fotoğraf", "tek dokunuşla doğru oosite ve aşamaya", "v3.8"), ("Cryo haritası", "kayıttan türer; boş yer önerilir", "v3.0 · v6.190"),
          ("Resmî formlar", "ve Bakanlık tablosu kayıttan basılır", "v6.37 · v6.201"), ("İşlemi yapan", "seçilir; her değişiklik izlenir", "v6.99 · v0.2"),
          ("Oranlar", "her ay kendiliğinden hesaplanır", "v6.123"), ("Yedek", "yoksa program uyarır", "v1.2")]
-sahne(5, 50, "5 · Elle yapılan iş", f'Elle yapılan altı iş, {M("kayıt girilirken")} kendiliğinden oluyor', f'''
+sahne(5, 50, "5 · Elle Yapılan İş", f'Elle yapılan altı iş, {M("kayıt girilirken")} kendiliğinden oluyor', f'''
 <div class="yolc"><span>Kâğıt</span><em>→</em><span>Excel / Access</span><em>→</em><span class="sim">Kendi programım</span><em>→</em><span>Yapay zekâ ile derin istatistik</span></div>
 <div class="defter">{"".join(f'<div {"" if i < 2 else f"data-adim=\"{i//2}\""}><b>{a}</b><p>{b}</p><code>{c}</code></div>' for i, (a, b, c) in enumerate(ISLER))}</div>
 <p class="acik">Patient Data Center: kayıt ve betimsel istatistik aracı. İçinde makine öğrenmesi modeli yok.</p>''',
@@ -665,7 +667,7 @@ sahne(5, 50, "5 · Elle yapılan iş", f'Elle yapılan altı iş, {M("kayıt gir
       "Patient Data Center README sürüm notları (v0.2 – v6.201) · ekranda gerçek hasta verisi yok", ilk=True)
 
 # ===================== 5.2 GELİŞTİRME DÖNGÜSÜ =====================
-sahne(5, 45, "5 · Geliştirme döngüsü", f'İhtiyacı embriyolog söyledi, yapay zekâ kodladı, {M("embriyolog doğruladı")}', f'''
+sahne(5, 45, "5 · Geliştirme Döngüsü", f'İhtiyacı embriyolog söyledi, yapay zekâ kodladı, {M("embriyolog doğruladı")}', f'''
 <div class="dongu"><span class="ben">İhtiyaç</span><em>→</em><span>YZ kodlar</span><em>→</em><span>Test</span><em>→</em><span class="ben">Embriyolog doğrular</span><em>→</em><span>Sürüm notu</span><em class="don">↺</em>
   <small><i class="ben"></i>embriyolog <i></i>yapay zekâ</small></div>
 <div class="gel">
@@ -683,7 +685,7 @@ sahne(5, 45, "5 · Geliştirme döngüsü", f'İhtiyacı embriyolog söyledi, ya
 
 # ===================== 5.3 KPI TABLOSU =====================
 vi, vb, vm = d(B5, "vienna_icsi_fert"), d(B5, "vienna_blast"), d(B5, "vienna_mii")
-sahne(5, 45, "5 · KPI takibi", f'Program {d(B5,"pdc_oran_sayisi")} oranı her ay hesaplıyor; Vienna’yla eşleşmesi {M("kısmi")}', f'''
+sahne(5, 45, "5 · KPI Takibi", f'Program {d(B5,"pdc_oran_sayisi")} oranı her ay hesaplıyor; Vienna’yla eşleşmesi {M("kısmi")}', f'''
 <div class="kpi">
   <div class="kb"><span>Programın oranı</span><span>Vienna 2017 karşılığı</span><span>Eşleşme</span></div>
   <div><b>M2</b><i>MII / yumurta</i><p>Referans gösterge: %{vm["alt_yuzde"]}–{vm["ust_yuzde"]}</p><em>lab KPI’sı değil</em></div>
@@ -698,7 +700,7 @@ sahne(5, 45, "5 · KPI takibi", f'Program {d(B5,"pdc_oran_sayisi")} oranı her a
 
 # ===================== 5.4 CUSUM + FUNNEL =====================
 mc, fu = KP["monte_carlo"], KP["funnel"]; E_, F_ = fu["embriyologlar"]["E"], fu["embriyologlar"]["F"]
-sahne(5, 55, "5 · İleri istatistik", f'{M("CUSUM")} düşüşü aylık ortalamadan önce yakalıyor; {M("yaş ayarı")} haksızlığı düzeltiyor', f'''
+sahne(5, 55, "5 · İleri İstatistik", f'{M("CUSUM")} düşüşü aylık ortalamadan önce yakalıyor; {M("yaş ayarı")} haksızlığı düzeltiyor', f'''
 <div class="ileri">
   <div>
     <h3>Erken uyarı <small>{mc["tekrar"]} simülasyon · oran {yo(KP["gercek_parametreler"]["taban_oran"],0)} → {yo(KP["gercek_parametreler"]["kayma_sonrasi_oran"],0)}</small></h3>
@@ -749,7 +751,7 @@ SLAYT.append(dict(sure=15, kisa="Kapanış", yedek=False, q=0, h2="Beş soru, be
 SLAYT[-1]["html"] = SLAYT[-1]["html"].replace("%%NOTK%%", SLAYT[-1]["notu"])
 
 # ===================== YEDEKLER =====================
-sahne(0, 0, "Yedek · Yöntem ve sınırlar", "Yöntem: her sayı nereden geliyor, ne kadar okundu?", f'''
+sahne(0, 0, "Yedek · Yöntem ve Sınırlar", "Yöntem: her sayı nereden geliyor, ne kadar okundu?", f'''
 <div class="yontem">
   <div><b>Literatür</b><p>PubMed kaydında görülüp aynen aktarıldı (14 Kasım 2026). Künyede okuma derinliği yazıyor: tam metin ya da yalnız özet. Tarama sistematik değil.</p></div>
   <div><b>Yaygınlık</b><p>Firma ve klinik beyanları; hakemli değil, toplanamaz. Merkez adı verilmedi.</p></div>
@@ -762,7 +764,7 @@ sahne(0, 0, "Yedek · Kaynakça 1", "Kaynakça (1): aşamalar ve yaygınlık", f
       "Kaynakça, soru 1 ve 2.", "Künyeler kısaltılmıştır; PMID’ler bölüm dosyalarındaki doğrulama tablolarından alındı", yedek=True)
 sahne(0, 0, "Yedek · Kaynakça 2", "Kaynakça (2): etki, doğruluk, KPI", f'<div class="kaynakca">{kaynakca(1)}</div>',
       "Kaynakça, soru 3, 4 ve 5.", "Künyeler kısaltılmıştır; PMID’ler bölüm dosyalarındaki doğrulama tablolarından alındı", yedek=True)
-sahne(0, 0, "Yedek · Beklenen sorular", "Beklenen sorular", f'''
+sahne(0, 0, "Yedek · Beklenen Sorular", "Beklenen sorular", f'''
 <div class="sss">
   <div><b>“AUC {f(g4("berntsen_kid"))} iyi mi, kötü mü?”</b><p>Gardner aynı tür veride {f(g4("ueno_genc_gardner"))} dolayında. Fark yalnız 35 yaş altında anlamlı: {f(g4("ueno_genc_idascore"))}’ye karşı {f(g4("ueno_genc_gardner"))}.</p></div>
   <div><b>“Yüksek AUC, yüksek gebelik oranı mı demek?”</b><p>Hayır. AUC bir havuz içindeki sıralamayı ölçer, implantasyon oranını değil.</p></div>
@@ -771,7 +773,7 @@ sahne(0, 0, "Yedek · Beklenen sorular", "Beklenen sorular", f'''
   <div><b>“CUSUM ve funnel programda var mı?”</b><p>Hayır. Sentetik veriyle yöntem gösterimi.</p></div>
   <div><b>“Gerçek hasta verisi kullandınız mı?”</b><p>Hayır. Bütün demolar sentetik.</p></div>
 </div>''', "Soru-cevap için hazır kısa cevaplar.", "Ueno 2021 Fertil Steril (özet) · Berntsen 2022 PLoS One (tam metin) · Illingworth 2024 Nat Med (tam metin)", yedek=True)
-sahne(0, 0, "Yedek · Oran ölçeği", "Oran ölçeğinde de tablo aynı: güven aralıkları 1’i içeriyor", f'<div class="sekilk" style="margin-top:20px">{orman_oran()}</div>',
+sahne(0, 0, "Yedek · Oran Ölçeği", "Oran ölçeğinde de tablo aynı: güven aralıkları 1’i içeriyor", f'<div class="sekilk" style="margin-top:20px">{orman_oran()}</div>',
       "Ana grafikte mutlak risk farkı vardı; burada aynı çalışmaların oran ölçeğindeki değerleri var. aOR ve RR aynı eksende, yalnız karşılaştırma için.",
       "Bhide 2026 Hum Reprod Update (aOR, özet) · Illingworth 2024 Nat Med (RR, tam metin) · Yaghi 2026 Eur J Obstet Gynecol (RR, yalnız 2 çalışma havuzlandı; özet)", yedek=True)
 sahne(0, 0, "Yedek · Sızıntı", "Hastayı ayırınca esnek modelin başarısı düşüyor, basit model yerinde kalıyor", f'''
@@ -781,7 +783,7 @@ sahne(0, 0, "Yedek · Sızıntı", "Hastayı ayırınca esnek modelin başarıs�
       "Sızıntı sorusu gelirse: gradyan artırma rastgele bölmede 0.686, hasta-gruplu bölmede 0.646; lojistik regresyon neredeyse değişmiyor.",
       "Sentetik kohort, seed 2027 · AUC · kendi analizim; gerçek hasta verisi değildir", etiket="SENTETİK VERİ · klinik bulgu değildir", yedek=True)
 qc = GR["kalite_kontrol"]
-sahne(0, 0, "Yedek · Kalite kontrol izlemi", "Model de izlenir: kamera değişince uyum düşer, yerel etiketle toparlanır", f'''
+sahne(0, 0, "Yedek · Kalite Kontrol İzlemi", "Model de izlenir: kamera değişince uyum düşer, yerel etiketle toparlanır", f'''
 <div class="qc"><img class="sekil" src="analiz/fig_kalite_kontrol.svg" alt="Model–embriyolog uyumu, sentetik">
 <div><p>Haftalık model–embriyolog uyumu <b>{yo(qc["taban_uyum"])}</b>.</p><p>{qc["kamera_degisim_haftasi"]}. haftada kamera değişimi: en düşük <b>{yo(qc["degisim_sonrasi_en_dusuk"])}</b>; alarm aynı hafta.</p><p>{qc["ince_ayar_etiket_sayisi"]} yerel etiketle {qc["ince_ayar_haftasi"]}. haftada ince ayar: son 8 hafta <b>{yo(qc["son_8_hafta_uyum"])}</b>.</p></div></div>''',
       "Embriyoloğun kalite kontrolcü rolü sorulursa: model de bir KPI gibi izlenir.",

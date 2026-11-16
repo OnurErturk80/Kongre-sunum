@@ -71,6 +71,7 @@ button.dugme.kucuk{font-size:19px;padding:6px 12px;margin-left:18px;vertical-ali
 
 /* 1.1 hat ve matris */
 .hatk{position:relative;height:690px}
+.adimler{position:absolute;width:0;height:0;overflow:hidden}
 .hatcizgi{position:absolute;left:68px;right:68px;top:48px;height:4px;background:var(--metin);transition:opacity .4s}
 .dr{position:absolute;left:0;top:0;width:136px;margin-left:-68px;text-align:center;display:flex;flex-direction:column;align-items:center;transition:transform .85s cubic-bezier(.2,.7,.2,1);cursor:pointer}
 .dr svg{width:60px;height:60px;display:block;margin:0 auto}

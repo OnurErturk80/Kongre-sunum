@@ -22,6 +22,19 @@ Teknik kararları kısaca gerekçelendir, klinik kararları ona sor.
 - Görsel dil (kullanıcı "tarzı hoşuma gitti" dedi): kemik zemin #F6F3EC, mürekkep #111A27, fosforlu sarı #FFD43B,
   kırmızı uyarı #C7361F; solda koyu 1–5 soru omurgası; soru Lora italik, cevap Inter Display ağır.
 - Tam sahne listesi: `sunum_v4/KARARLAR.md` (a) ve `sunum_v4/sahne_listesi.json`.
+- Slayt başlıkları (genel bakış/sunucu panelindeki `data-baslik`, ör. "1 · Aşama Hattı") Title Case
+  (16 Kasım 2026, kullanıcı isteği). Sahnelerin görünür h2 bulgu cümleleri buna dahil değil; onlar
+  halen cümle biçiminde ("başlık bulguyu söyler, konuyu etiketlemez" kuralı geçerli).
+- Sahne "1 · Aşama Hattı"ndaki durak kartları artık → / ← tuşlarıyla da mouse tıklamasıyla aynı
+  sırada tek tek seçiliyor (16 Kasım 2026). `v4.js`'teki gizli `data-adim` işaretçileri `statik`
+  modda (disa_aktar.py dışa aktarımı) devre dışı kalır; aksi halde PDF/PPTX'te yanlış durak
+  (son durak) görünür kalırdı — bkz. `v4.js` içindeki `if(!statik)` bloğu.
+- **5.5 "Benim fikrim" tezi değişti (16 Kasım 2026, kullanıcı kararı).** Eski tez ("ham değil,
+  kişisel yapay zekâ; embriyolog kalite kontrolcüsü") kullanıcı tarafından reddedildi. Yeni tez:
+  **"geliştirici embriyolog"** — "Yapay zekâ bana embriyo seçmeyi değil, yazılım yazmayı öğretti."
+  Kapanış artık öğüt değil davet/soru: "siz de kendi ihtiyacınızı yazılığa çevirebilir misiniz?"
+  Kapanış slaytındaki 5. kısa cevap da buna göre güncellendi. Bu tezi tekrar değiştirmeden önce
+  kullanıcıya sor.
 
 ## Değişmeyen kurallar (gerekçeli)
 

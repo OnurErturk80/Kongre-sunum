@@ -722,24 +722,24 @@ sahne(5, 55, "5 · İleri İstatistik", f'{M("CUSUM")} düşüşü aylık ortala
 
 # ===================== 5.5 FİKRİM =====================
 ia = GR["ince_ayar"]
-sahne(5, 45, "5 · Benim fikrim", f'{M("Ham değil, kişisel")} yapay zekâ; embriyolog onun kalite kontrolcüsü', f'''
+sahne(5, 45, "5 · Benim Fikrim", f'Yapay zekâ bana {M("embriyo seçmeyi değil, yazılım yazmayı")} öğretti', f'''
 <div class="fikir">
   <ol>
     <li><b>1</b><p>Yapay zekâ yaygın; ama daha çok bebek getirdiği gösterilmedi, doğruluğu orta.</p></li>
-    <li data-adim="1"><b>2</b><p>Ben onu ham değil, kişisel kullanıyorum: ihtiyacı ben söylüyorum, o kodluyor, ben doğruluyorum.</p></li>
-    <li data-adim="2"><b>3</b><p>Embriyolog işsiz kalmaz; yapay zekânın kalite kontrolcüsü olur.</p></li>
+    <li data-adim="1"><b>2</b><p>Ben Python’a yeni başlayan bir embriyoloğum; yapay zekâyla {DEPO["gun"]} günde {DEPO["commit"]} commit’lik kendi kayıt programımı yazdım.</p></li>
+    <li data-adim="2"><b>3</b><p>Sorunu en iyi, o işi yıllarca yapan bilir; yapay zekâ bunu artık koda çevirebiliyor.</p></li>
   </ol>
   <figure data-adim="3"><span class="mini">SENTETİK GÖRÜNTÜ · klinik bulgu değildir</span>{ince_ayar()}
-    <figcaption>Hazır görsel model başka labda <b>{f(ia["auc"][0])}</b>; {ia["yerel_n"][1]} yerel etiketle <b>{f(ia["auc"][1])}</b>.</figcaption></figure>
+    <figcaption>Kod yazabiliyorsanız görsel modeli de yerelde ayarlayabilirsiniz: başka labda <b>{f(ia["auc"][0])}</b>; {ia["yerel_n"][1]} yerel etiketle <b>{f(ia["auc"][1])}</b>.</figcaption></figure>
 </div>''',
-      "Benim fikrim şu. Yapay zekâ laboratuvara girdi ve yayıldı; ama gördüğümüz yayınlarda hazır bir modelin daha çok bebek getirdiği gösterilmedi ve doğruluğu orta düzeyde kaldı. [tıkla] Bu yüzden ben onu ham değil, kişisel kullanıyorum: ihtiyacı ben söylüyorum, yapay zekâ kodluyor, ben doğruluyorum. [tıkla] Embriyolog işsiz kalmayacak; yapay zekâyı etiketleyen, doğrulayan, izleyen ve son kararı veren kalite kontrolcüsü olacak. [tıkla] Görsel modeller için de aynısı geçerli: sentetik denememde, başka bir labda yazı-tura düzeyine düşen hazır model, embriyoloğun etiketlediği 25 görüntüyle toparlandı. Beş soruyu beş kısa cevapla toparlayayım.",
-      f'Sentetik görüntü demosu, seed {GR["seed"]}, {ia["tekrar"]} tekrar ortalaması (AUC) · dayanak: Illingworth 2024, Bhide 2026, Berntsen 2022')
+      "Benim fikrim şu. Yapay zekâ laboratuvara girdi ve yayıldı; ama hazır bir modelin daha çok bebek getirdiği gösterilmedi, doğruluğu orta kaldı. [tıkla] Ben farklı bir yoldan gittim: Python’a yeni başlayan, yirmi iki yıllık bir embriyolog olarak, yapay zekâyla kendi kayıt programımı yazdım; otuz iki günde üç yüz kırk bir commit. [tıkla] Sorunu en iyi, o işi yıllarca yapan bilir; yapay zekâ artık bu bilgiyi koda çevirmenin önündeki engeli kaldırıyor. [tıkla] Aynı mantık görsel modeller için de geçerli: kod yazabiliyorsanız, hazır modeli de yerelde kendi etiketinizle ayarlayabilirsiniz. Soru artık “yapay zekâ güvenilir mi” değil: siz de kendi ihtiyacınızı yazılıma çevirebilir misiniz? Beş soruyu toparlayayım.",
+      f'Patient Data Center git kaydı ({DEPO["gun"]} gün, {DEPO["commit"]} commit) · sentetik görüntü demosu, seed {GR["seed"]}, {ia["tekrar"]} tekrar ortalaması (AUC) · dayanak: Illingworth 2024, Bhide 2026, Berntsen 2022')
 
 # ===================== KAPANIŞ =====================
 CEVAP = ["Hattın her durağında; RKÇ yalnız embriyo seçiminde.", "30’dan fazla ülkede duyuruluyor; ölçen hakemli veri az.", "Daha çok bebek gösterilmedi; değişen hız ve iş akışı.",
-         f'Görmede güçlü, kehanette orta: AUC çoğunlukla {f(d(B4,"berntsen_klinik_alt"),1)}–{f(d(B4,"mina_auc"),1)}.', "Ham değil, kişisel: embriyolog söyler, doğrular, karar verir."]
+         f'Görmede güçlü, kehanette orta: AUC çoğunlukla {f(d(B4,"berntsen_klinik_alt"),1)}–{f(d(B4,"mina_auc"),1)}.', "Embriyo seçmeyi değil, yazılım yazmayı öğrendim."]
 SLAYT.append(dict(sure=15, kisa="Kapanış", yedek=False, q=0, h2="Beş soru, beş kısa cevap", notu=
-    "Beş sorunun kısa cevapları ekranda. Tek cümleyle: yapay zekâ laboratuvarda, ama kanıtını ve doğruluğunu bizim denetlememiz gerekiyor; ben de onu kendi işime göre, kendi denetimimle kullanıyorum. Dinlediğiniz için teşekkür ederim; sorularınızı memnuniyetle alırım.",
+    "Beş sorunun kısa cevapları ekranda. Tek cümleyle: yapay zekâ laboratuvarda, ama kanıtını ve doğruluğunu bizim denetlememiz gerekiyor; ben de bunu, embriyo seçmek için değil, kendi programımı yazmak için kullandım. Dinlediğiniz için teşekkür ederim; sorularınızı memnuniyetle alırım.",
     html=f'''<section class="slayt kapak kapanis" data-sure="15" data-baslik="Kapanış">
 {omurga(6)}
 <div class="kunyeust">Beş soru, beş kısa cevap</div>

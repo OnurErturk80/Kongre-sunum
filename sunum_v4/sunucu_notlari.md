@@ -92,17 +92,17 @@ KPI’yı nasıl takip ediyorum? Program bugün beş oranı hesaplıyor: M2, fer
 
 Bu ekranlar programda yok; programın tuttuğu türden veriyle neler yapılabileceğini sentetik veriyle gösteriyorum. Soldaki grafikte bir oran yetmişinci haftada yüzde 75’ten yüzde 69’a düşüyor; bir lot değişikliği gibi düşünün. Bunu 500 kez simüle ettim. Haftalık CUSUM düşüşü yüzde 96.6 oranında, ortanca 10 haftada yakaladı; aylık ortalamaya bakan klasik grafik yüzde 67.2 oranında ve 14 haftada. Bedeli biraz daha fazla yanlış alarm: yüzde 4’e karşı 1.8. Sağda adil karşılaştırma var. [“Yaşa göre ayarlı” düğmesi] F’nin hastaları daha yaşlı; ham oranı yüzde 68.9 ile düşük görünüyor, yaşa göre ayarlayınca yüzde 75.9’a çıkıyor. Gerçekten düşük olan E ise iki grafikte de sınırın dışında. Yani doğru soru sorulursa, aynı kayıt hem erken uyarı verir hem de haksız karşılaştırmayı düzeltir.
 
-## 16. 5 · Benim fikrim  (45 sn · 83 sözcük)
+## 16. 5 · Benim Fikrim  (45 sn · 100 sözcük)
 
-**Ham değil, kişisel yapay zekâ; embriyolog onun kalite kontrolcüsü**
+**Yapay zekâ bana embriyo seçmeyi değil, yazılım yazmayı öğretti**
 
-Benim fikrim şu. Yapay zekâ laboratuvara girdi ve yayıldı; ama gördüğümüz yayınlarda hazır bir modelin daha çok bebek getirdiği gösterilmedi ve doğruluğu orta düzeyde kaldı. [tıkla] Bu yüzden ben onu ham değil, kişisel kullanıyorum: ihtiyacı ben söylüyorum, yapay zekâ kodluyor, ben doğruluyorum. [tıkla] Embriyolog işsiz kalmayacak; yapay zekâyı etiketleyen, doğrulayan, izleyen ve son kararı veren kalite kontrolcüsü olacak. [tıkla] Görsel modeller için de aynısı geçerli: sentetik denememde, başka bir labda yazı-tura düzeyine düşen hazır model, embriyoloğun etiketlediği 25 görüntüyle toparlandı. Beş soruyu beş kısa cevapla toparlayayım.
+Benim fikrim şu. Yapay zekâ laboratuvara girdi ve yayıldı; ama hazır bir modelin daha çok bebek getirdiği gösterilmedi, doğruluğu orta kaldı. [tıkla] Ben farklı bir yoldan gittim: Python’a yeni başlayan, yirmi iki yıllık bir embriyolog olarak, yapay zekâyla kendi kayıt programımı yazdım; otuz iki günde üç yüz kırk bir commit. [tıkla] Sorunu en iyi, o işi yıllarca yapan bilir; yapay zekâ artık bu bilgiyi koda çevirmenin önündeki engeli kaldırıyor. [tıkla] Aynı mantık görsel modeller için de geçerli: kod yazabiliyorsanız, hazır modeli de yerelde kendi etiketinizle ayarlayabilirsiniz. Soru artık “yapay zekâ güvenilir mi” değil: siz de kendi ihtiyacınızı yazılıma çevirebilir misiniz? Beş soruyu toparlayayım.
 
-## 17. Kapanış  (15 sn · 33 sözcük)
+## 17. Kapanış  (15 sn · 36 sözcük)
 
 **Beş soru, beş kısa cevap**
 
-Beş sorunun kısa cevapları ekranda. Tek cümleyle: yapay zekâ laboratuvarda, ama kanıtını ve doğruluğunu bizim denetlememiz gerekiyor; ben de onu kendi işime göre, kendi denetimimle kullanıyorum. Dinlediğiniz için teşekkür ederim; sorularınızı memnuniyetle alırım.
+Beş sorunun kısa cevapları ekranda. Tek cümleyle: yapay zekâ laboratuvarda, ama kanıtını ve doğruluğunu bizim denetlememiz gerekiyor; ben de bunu, embriyo seçmek için değil, kendi programımı yazmak için kullandım. Dinlediğiniz için teşekkür ederim; sorularınızı memnuniyetle alırım.
 
 ## 18. Yedek · Yöntem ve Sınırlar  (0 sn · 16 sözcük)
 

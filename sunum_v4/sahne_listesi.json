@@ -1,0 +1,194 @@
+[
+ {
+  "no": 1,
+  "soru": null,
+  "kisa": "Başlık",
+  "baslik": "Yapay zekânın iş akışına entegrasyonu ve ileri istatistik",
+  "sure": 15,
+  "yedek": false
+ },
+ {
+  "no": 2,
+  "soru": 1,
+  "kisa": "1 · Aşama hattı",
+  "baslik": "Yapay zekâ hattın her durağında; RKÇ yalnız embriyo seçiminde",
+  "sure": 66,
+  "yedek": false
+ },
+ {
+  "no": 3,
+  "soru": 1,
+  "kisa": "1 · İlkler",
+  "baslik": "Otuz yılda tahminden robota; kırılma 2018–2019’da geldi",
+  "sure": 54,
+  "yedek": false
+ },
+ {
+  "no": 4,
+  "soru": 2,
+  "kisa": "2 · Ülke ızgarası",
+  "baslik": "YZ yazılımları 30’dan fazla ülkede, yüzlerce klinikte duyuruluyor",
+  "sure": 60,
+  "yedek": false
+ },
+ {
+  "no": 5,
+  "soru": 2,
+  "kisa": "2 · Ölçülen kullanım",
+  "baslik": "Hakemli veride ölçüm az: Japonya’da 345 tesisten 57’si YZ skoru kullanıyor",
+  "sure": 60,
+  "yedek": false
+ },
+ {
+  "no": 6,
+  "soru": 3,
+  "kisa": "3 · Canlı doğum",
+  "baslik": "Canlı doğumda fark yok: en güçlü kanıt bunu söylüyor",
+  "sure": 65,
+  "yedek": false
+ },
+ {
+  "no": 7,
+  "soru": 3,
+  "kisa": "3 · Değişen ne",
+  "baslik": "Değişen bebek sayısı değil: süre, tutarlılık, ilaç",
+  "sure": 55,
+  "yedek": false
+ },
+ {
+  "no": 8,
+  "soru": 3,
+  "kisa": "3 · Etki panosu",
+  "baslik": "Neye etki ediyor? Kanıtla gösterilen tek kazanç hız",
+  "sure": 60,
+  "yedek": false
+ },
+ {
+  "no": 9,
+  "soru": 4,
+  "kisa": "4 · AUC cetveli",
+  "baslik": "Görmede güçlü, kehanette orta: AUC çoğunlukla 0.6–0.7",
+  "sure": 75,
+  "yedek": false
+ },
+ {
+  "no": 10,
+  "soru": 4,
+  "kisa": "4 · Aynı model, iki sayı",
+  "baslik": "Aynı model, iki sayı: parlaklığı payda ve doğrulama belirliyor",
+  "sure": 60,
+  "yedek": false
+ },
+ {
+  "no": 11,
+  "soru": 4,
+  "kisa": "4 · Beş kontrol",
+  "baslik": "Bir sayıya güvenmeden önce beş kontrol",
+  "sure": 45,
+  "yedek": false
+ },
+ {
+  "no": 12,
+  "soru": 5,
+  "kisa": "5 · Elle yapılan iş",
+  "baslik": "Elle yapılan altı iş, kayıt girilirken kendiliğinden oluyor",
+  "sure": 50,
+  "yedek": false
+ },
+ {
+  "no": 13,
+  "soru": 5,
+  "kisa": "5 · Geliştirme döngüsü",
+  "baslik": "İhtiyacı embriyolog söyledi, yapay zekâ kodladı, embriyolog doğruladı",
+  "sure": 45,
+  "yedek": false
+ },
+ {
+  "no": 14,
+  "soru": 5,
+  "kisa": "5 · KPI takibi",
+  "baslik": "Program 5 oranı her ay hesaplıyor; Vienna’yla eşleşmesi kısmi",
+  "sure": 45,
+  "yedek": false
+ },
+ {
+  "no": 15,
+  "soru": 5,
+  "kisa": "5 · İleri istatistik",
+  "baslik": "CUSUM düşüşü aylık ortalamadan önce yakalıyor; yaş ayarı haksızlığı düzeltiyor",
+  "sure": 55,
+  "yedek": false
+ },
+ {
+  "no": 16,
+  "soru": 5,
+  "kisa": "5 · Benim fikrim",
+  "baslik": "Ham değil, kişisel yapay zekâ; embriyolog onun kalite kontrolcüsü",
+  "sure": 45,
+  "yedek": false
+ },
+ {
+  "no": 17,
+  "soru": null,
+  "kisa": "Kapanış",
+  "baslik": "Beş soru, beş kısa cevap",
+  "sure": 15,
+  "yedek": false
+ },
+ {
+  "no": 18,
+  "soru": null,
+  "kisa": "Yedek · Yöntem ve sınırlar",
+  "baslik": "Yöntem: her sayı nereden geliyor, ne kadar okundu?",
+  "sure": 0,
+  "yedek": true
+ },
+ {
+  "no": 19,
+  "soru": null,
+  "kisa": "Yedek · Kaynakça 1",
+  "baslik": "Kaynakça (1): aşamalar ve yaygınlık",
+  "sure": 0,
+  "yedek": true
+ },
+ {
+  "no": 20,
+  "soru": null,
+  "kisa": "Yedek · Kaynakça 2",
+  "baslik": "Kaynakça (2): etki, doğruluk, KPI",
+  "sure": 0,
+  "yedek": true
+ },
+ {
+  "no": 21,
+  "soru": null,
+  "kisa": "Yedek · Beklenen sorular",
+  "baslik": "Beklenen sorular",
+  "sure": 0,
+  "yedek": true
+ },
+ {
+  "no": 22,
+  "soru": null,
+  "kisa": "Yedek · Oran ölçeği",
+  "baslik": "Oran ölçeğinde de tablo aynı: güven aralıkları 1’i içeriyor",
+  "sure": 0,
+  "yedek": true
+ },
+ {
+  "no": 23,
+  "soru": null,
+  "kisa": "Yedek · Sızıntı",
+  "baslik": "Hastayı ayırınca esnek modelin başarısı düşüyor, basit model yerinde kalıyor",
+  "sure": 0,
+  "yedek": true
+ },
+ {
+  "no": 24,
+  "soru": null,
+  "kisa": "Yedek · Kalite kontrol izlemi",
+  "baslik": "Model de izlenir: kamera değişince uyum düşer, yerel etiketle toparlanır",
+  "sure": 0,
+  "yedek": true
+ }
+]

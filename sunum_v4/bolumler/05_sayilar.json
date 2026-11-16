@@ -1,0 +1,384 @@
+{
+ "_not": "Bölüm 5 sayıları. okuma: depo = Patient-Data-Center deposundan bu oturumda okundu/sayıldı; sentetik = sentetik demo JSON'u; ozet/tam_metin = PubMed. Sentetik sayılar klinik bulgu değildir.",
+ "depo_commit": {
+  "deger": 341,
+  "kaynak": "git rev-list --count HEAD (Patient-Data-Center, 14 Kasım 2026)",
+  "okuma": "depo"
+ },
+ "depo_gun": {
+  "deger": 32,
+  "kaynak": "git log: ilk commit 2026-09-08, son 2026-10-09 (takvim günü, uçlar dahil)",
+  "okuma": "depo"
+ },
+ "depo_commit_gunu": {
+  "deger": 26,
+  "kaynak": "git log --date=short | sort -u",
+  "okuma": "depo"
+ },
+ "depo_surum_notu": {
+  "deger": 296,
+  "kaynak": "README.md '^# v' başlıkları (34 git öncesi v0.1–v5.8, 262 v6.1–v6.266)",
+  "okuma": "depo"
+ },
+ "depo_surum_notu_git_oncesi": {
+  "deger": 34,
+  "kaynak": "README.md satır 1452'den önceki '^# v' başlıkları",
+  "okuma": "depo"
+ },
+ "depo_son_surum": {
+  "deger": "v6.266",
+  "kaynak": "README.md satır 20585",
+  "okuma": "depo"
+ },
+ "depo_claude_ortak": {
+  "deger": 341,
+  "kaynak": "341 commit mesajının 341'inde 'Co-Authored-By: Claude' satırı",
+  "okuma": "depo"
+ },
+ "depo_yazar_claude": {
+  "deger": 330,
+  "kaynak": "git log --format=%an: 330 Claude, 11 kullanıcı",
+  "okuma": "depo"
+ },
+ "depo_goc": {
+  "deger": 61,
+  "kaynak": "goc.py + goc_0XX.py dosya sayısı",
+  "okuma": "depo"
+ },
+ "depo_app_satir": {
+  "deger": 14214,
+  "kaynak": "wc -l app.py",
+  "okuma": "depo"
+ },
+ "depo_claude_md_satir": {
+  "deger": 5212,
+  "kaynak": "wc -l CLAUDE.md",
+  "okuma": "depo"
+ },
+ "pdc_oran_sayisi": {
+  "deger": 5,
+  "kaynak": "disari.py 1095–1100 (oran_mii, oran_fert, oran_blast, oran_gebelik, oran_beta); templates/istatistik.html 93–118",
+  "okuma": "depo"
+ },
+ "pdc_beta_esik": {
+  "deger": 10,
+  "kaynak": "db.py 997 BETA_POZITIF_ESIK; README v6.241 satır 19051",
+  "okuma": "depo",
+  "birim": "mIU/mL"
+ },
+ "pdc_yedek_uyari_gun": {
+  "deger": 3,
+  "kaynak": "README v1.2 satır 517",
+  "okuma": "depo",
+  "birim": "gün"
+ },
+ "pdc_test_m2": {
+  "deger": {
+   "pay": 20,
+   "payda": 32,
+   "yuzde": 62.5
+  },
+  "kaynak": "README v6.123 satır 9579 (TEST VERİSİ)",
+  "okuma": "depo"
+ },
+ "pdc_test_pn": {
+  "deger": {
+   "pay": 12,
+   "payda": 20,
+   "yuzde": 60.0
+  },
+  "kaynak": "README v6.123 satır 9579–9580 (TEST VERİSİ)",
+  "okuma": "depo"
+ },
+ "pdc_test_blast": {
+  "deger": {
+   "pay": 4,
+   "payda": 12,
+   "yuzde": 33.3
+  },
+  "kaynak": "README v6.123 satır 9580 (TEST VERİSİ)",
+  "okuma": "depo"
+ },
+ "pdc_test_gebelik": {
+  "deger": {
+   "pay": 1,
+   "payda": 3,
+   "yuzde": 33.3
+  },
+  "kaynak": "README v6.123 satır 9580–9581 (TEST VERİSİ)",
+  "okuma": "depo"
+ },
+ "vienna_gosterge": {
+  "deger": {
+   "toplam": 19,
+   "KPI": 12,
+   "PI": 5,
+   "RI": 2
+  },
+  "kaynak": "PMID 28784335",
+  "okuma": "ozet"
+ },
+ "vienna_icsi_fert": {
+  "deger": {
+   "competence_min_yuzde": 65,
+   "benchmark_min_yuzde": 80
+  },
+  "kaynak": "PMID 31486806 (PMC6276649)",
+  "okuma": "tam_metin"
+ },
+ "vienna_blast": {
+  "deger": {
+   "competency_min_yuzde": 40,
+   "benchmark_min_yuzde": 60,
+   "gun": 5
+  },
+  "kaynak": "PMID 31486806 (PMC6276649)",
+  "okuma": "tam_metin"
+ },
+ "vienna_mii": {
+  "deger": {
+   "alt_yuzde": 75,
+   "ust_yuzde": 90,
+   "tur": "RI"
+  },
+  "kaynak": "PMID 31486806 (PMC6276649)",
+  "okuma": "tam_metin"
+ },
+ "vienna_icsi_hasar": {
+  "deger": {
+   "competence_max_yuzde": 10,
+   "benchmark_max_yuzde": 5
+  },
+  "kaynak": "PMID 31486806 (PMC6276649)",
+  "okuma": "tam_metin",
+  "slaytta": false
+ },
+ "vienna_aylik": {
+  "deger": {
+   "siklik": "ideally on a monthly basis",
+   "baslangic_olgu": 30
+  },
+  "kaynak": "PMID 31486806 (PMC6276649)",
+  "okuma": "tam_metin"
+ },
+ "zaca_tgbdr": {
+  "deger": {
+   "le39_yuzde": 45.5,
+   "ge40_yuzde": 33.4,
+   "n_siklus": 862
+  },
+  "kaynak": "PMID 35338418",
+  "okuma": "ozet"
+ },
+ "kpi_taban": {
+  "deger": 0.75,
+  "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json gercek_parametreler.taban_oran",
+  "okuma": "sentetik"
+ },
+ "kpi_kayma": {
+  "deger": {
+   "hafta": 70,
+   "oran": 0.69
+  },
+  "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json",
+  "okuma": "sentetik"
+ },
+ "cusum_tekrar": {
+  "deger": {
+   "tekrar": 500,
+   "izlem_hafta": 34
+  },
+  "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json monte_carlo",
+  "okuma": "sentetik"
+ },
+ "cusum_yakalama": {
+  "deger": 96.6,
+  "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json monte_carlo.cusum.yakalama_orani",
+  "okuma": "sentetik",
+  "birim": "%"
+ },
+ "cusum_gecikme": {
+  "deger": 10.0,
+  "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json monte_carlo.cusum.medyan_gecikme_hafta",
+  "okuma": "sentetik",
+  "birim": "hafta"
+ },
+ "shewhart_yakalama": {
+  "deger": 67.2,
+  "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json monte_carlo.shewhart.yakalama_orani",
+  "okuma": "sentetik",
+  "birim": "%"
+ },
+ "shewhart_gecikme": {
+  "deger": 14.0,
+  "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json monte_carlo.shewhart.medyan_gecikme_hafta",
+  "okuma": "sentetik",
+  "birim": "hafta"
+ },
+ "cusum_yanlis_alarm": {
+  "deger": 4.0,
+  "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json monte_carlo.cusum_yanlis_alarm_orani",
+  "okuma": "sentetik",
+  "birim": "%"
+ },
+ "shewhart_yanlis_alarm": {
+  "deger": 1.8,
+  "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json monte_carlo.shewhart_yanlis_alarm_orani",
+  "okuma": "sentetik",
+  "birim": "%"
+ },
+ "cusum_once": {
+  "deger": 88.2,
+  "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json monte_carlo.cusum_once_veya_ayni",
+  "okuma": "sentetik",
+  "birim": "%"
+ },
+ "cusum_tek_ornek_gecikme": {
+  "deger": 6,
+  "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json erken_uyari.cusum_gecikme_hafta (Shewhart: yakalanmadı)",
+  "okuma": "sentetik",
+  "birim": "hafta"
+ },
+ "funnel_genel": {
+  "deger": 71.4,
+  "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json funnel.genel_oran",
+  "okuma": "sentetik",
+  "birim": "%"
+ },
+ "funnel_F_ham": {
+  "deger": 68.9,
+  "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json funnel.embriyologlar.F.ham",
+  "okuma": "sentetik",
+  "birim": "%"
+ },
+ "funnel_F_ayarli": {
+  "deger": 75.9,
+  "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json funnel.embriyologlar.F.ayarli",
+  "okuma": "sentetik",
+  "birim": "%"
+ },
+ "funnel_F_n_yas": {
+  "deger": {
+   "n": 90,
+   "yas_ort": 39.9
+  },
+  "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json",
+  "okuma": "sentetik"
+ },
+ "funnel_E_ham": {
+  "deger": 62.8,
+  "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json funnel.embriyologlar.E.ham",
+  "okuma": "sentetik",
+  "birim": "%"
+ },
+ "funnel_E_ayarli": {
+  "deger": 62.5,
+  "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json funnel.embriyologlar.E.ayarli",
+  "okuma": "sentetik",
+  "birim": "%"
+ },
+ "funnel_E_n": {
+  "deger": 610,
+  "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json",
+  "okuma": "sentetik"
+ },
+ "funnel_sinir_disi": {
+  "deger": {
+   "ham": [
+    "E"
+   ],
+   "ayarli": [
+    "E"
+   ],
+   "sinir_yuzde": 99.8
+  },
+  "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json",
+  "okuma": "sentetik"
+ },
+ "gorsel_kendi_lab_auc": {
+  "deger": 0.954,
+  "kaynak": "/home/claude/sunum/analiz/sonuc_gorsel/sonuclar_gorsel.json ince_ayar.hazir_model_kendi_labinda_auc",
+  "okuma": "sentetik"
+ },
+ "gorsel_baska_lab_auc": {
+  "deger": 0.509,
+  "kaynak": "/home/claude/sunum/analiz/sonuc_gorsel/sonuclar_gorsel.json ince_ayar.auc[0] (yerel_n=0)",
+  "okuma": "sentetik"
+ },
+ "gorsel_25_etiket_auc": {
+  "deger": 0.835,
+  "kaynak": "/home/claude/sunum/analiz/sonuc_gorsel/sonuclar_gorsel.json ince_ayar.auc[1] (yerel_n=25)",
+  "okuma": "sentetik"
+ },
+ "gorsel_400_etiket_auc": {
+  "deger": 0.886,
+  "kaynak": "/home/claude/sunum/analiz/sonuc_gorsel/sonuclar_gorsel.json ince_ayar.auc[5] (yerel_n=400)",
+  "okuma": "sentetik"
+ },
+ "qc_taban_uyum": {
+  "deger": 76.7,
+  "kaynak": "/home/claude/sunum/analiz/sonuc_gorsel/sonuclar_gorsel.json kalite_kontrol.taban_uyum",
+  "okuma": "sentetik",
+  "birim": "%",
+  "sahne": "yedek Y1"
+ },
+ "qc_en_dusuk": {
+  "deger": 23.3,
+  "kaynak": "/home/claude/sunum/analiz/sonuc_gorsel/sonuclar_gorsel.json kalite_kontrol.degisim_sonrasi_en_dusuk",
+  "okuma": "sentetik",
+  "birim": "%",
+  "sahne": "yedek Y1"
+ },
+ "qc_haftalar": {
+  "deger": {
+   "kamera_degisim": 19,
+   "alarm": 19,
+   "ince_ayar": 21,
+   "etiket": 90
+  },
+  "kaynak": "/home/claude/sunum/analiz/sonuc_gorsel/sonuclar_gorsel.json",
+  "okuma": "sentetik",
+  "sahne": "yedek Y1"
+ },
+ "qc_son8": {
+  "deger": 73.3,
+  "kaynak": "/home/claude/sunum/analiz/sonuc_gorsel/sonuclar_gorsel.json kalite_kontrol.son_8_hafta_uyum",
+  "okuma": "sentetik",
+  "birim": "%",
+  "sahne": "yedek Y1"
+ },
+ "dogrulama_kohort": {
+  "deger": {
+   "hasta": 700,
+   "siklus": 1065,
+   "embriyo": 4428
+  },
+  "kaynak": "/home/claude/sunum/analiz/sonuc_slayt/sonuclar.json",
+  "okuma": "sentetik",
+  "sahne": "yedek Y2"
+ },
+ "dogrulama_gbm_auc": {
+  "deger": {
+   "rastgele": 0.686,
+   "hasta_gruplu": 0.646,
+   "hasta_gruplu_ga": [
+    0.629,
+    0.66
+   ],
+   "zamansal": 0.667
+  },
+  "kaynak": "/home/claude/sunum/analiz/sonuc_slayt/sonuclar.json",
+  "okuma": "sentetik",
+  "sahne": "yedek Y2"
+ },
+ "dogrulama_lr_auc": {
+  "deger": {
+   "rastgele": 0.706,
+   "hasta_gruplu": 0.704,
+   "zamansal": 0.699
+  },
+  "kaynak": "/home/claude/sunum/analiz/sonuc_slayt/sonuclar.json",
+  "okuma": "sentetik",
+  "sahne": "yedek Y2"
+ }
+}

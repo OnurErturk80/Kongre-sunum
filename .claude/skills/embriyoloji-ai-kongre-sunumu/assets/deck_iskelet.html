@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="tr" data-tema="acik">
+<head>
+<meta charset="utf-8">
+<title>SUNUM BAŞLIĞI — Klinik Embriyoloji Kongresi 2027</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+  DECK İSKELETİ — çevrimdışı, tek dosya, bağımlılıksız.
+  Kullanım: bu dosyayı kopyala, main#sahne içindeki örnek slaytları sil ve kendi
+  sahnelerini yaz. Kalıpları (başlık, şekil+geçiş düğmesi, kod, zaman çizelgesi, slider)
+  örnek slaytlarda görürsün. Motor (script bloğu ve çekirdek CSS) değişmez.
+  Derleme: scripts/sunum_derle.py  (fontları ve görselleri dosyanın içine gömer)
+
+  SLAYT ÖZNİTELİKLERİ
+    data-sure="90"      planlanan saniye (zamanlayıcı bununla çalışır)
+    data-baslik="..."   genel bakış ve sunucu görünümünde kısa ad
+    aside.not sunucu notu (salon ekranında görünmez)
+    data-adim="1..n"    sırayla beliren öğeler (→ tuşu)
+
+  KISAYOLLAR  → ␣ sonraki · ← önceki · G genel bakış · P sunucu görünümü
+              · T zamanlayıcı · F tam ekran · D açık/koyu tema · B ekranı karart · ? yardım
+-->
+<style>
+/*FONT_CSS*/
+:root{
+  --zemin:#FBFAF6; --metin:#14213D; --soluk:#5C677D; --vurgu:#E4572E; --mavi:#2A6F97;
+  --cizgi:#D9D5C9; --kart:#FFFFFF; --kod:#F1EFE7;
+  --font-baslik:"Inter Display","Inter","Helvetica Neue",Arial,sans-serif;
+  --font-metin:"Inter","Helvetica Neue",Arial,sans-serif;
+  --font-kod:"JetBrains Mono","DejaVu Sans Mono",Consolas,monospace;
+}
+html[data-tema="koyu"]{
+  --zemin:#0E1424; --metin:#EDF2F4; --soluk:#9AA5B8; --vurgu:#FF7A59; --mavi:#6DB3D9;
+  --cizgi:#27314A; --kart:#161E33; --kod:#121A2D;
+}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;background:#000;overflow:hidden;font-family:var(--font-metin)}
+#sahne{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:0 0;
+  background:var(--zemin);color:var(--metin);overflow:hidden}
+.slayt{position:absolute;inset:0;padding:96px 120px 120px;display:none;flex-direction:column}
+.slayt.aktif{display:flex}
+/* Tipografi: lang="tr" sayesinde i→İ, ı→I büyük harf dönüşümü doğru olur */
+h1{font:700 104px/1.04 var(--font-baslik);letter-spacing:-.025em}
+h2{font:700 64px/1.1 var(--font-baslik);letter-spacing:-.02em;max-width:1500px}
+h3{font:600 34px/1.2 var(--font-baslik)}
+p,li{font-size:34px;line-height:1.45;max-width:1450px}
+.kicker{font:600 22px var(--font-metin);letter-spacing:.14em;text-transform:uppercase;color:var(--vurgu);margin-bottom:22px}
+.soluk{color:var(--soluk)}
+.vurgu{color:var(--vurgu)}
+.ayrac{height:2px;background:var(--cizgi);margin:28px 0}
+.izgara{display:grid;gap:48px;align-items:center;flex:1}
+.i2{grid-template-columns:1fr 1fr}.i3{grid-template-columns:repeat(3,1fr)}
+.kart{background:var(--kart);border:2px solid var(--cizgi);border-radius:18px;padding:36px}
+.rakam{font:700 150px/1 var(--font-baslik);color:var(--vurgu);letter-spacing:-.03em}
+img.sekil,svg.sekil{max-width:100%;max-height:690px;border-radius:12px;background:#fff}
+pre{font:500 27px/1.55 var(--font-kod);background:var(--kod);border:2px solid var(--cizgi);
+  border-radius:16px;padding:32px 40px;overflow:hidden;white-space:pre}
+pre .h{background:color-mix(in srgb,var(--vurgu) 22%,transparent);border-radius:4px;padding:0 6px}
+.etiket{position:absolute;right:120px;top:44px;font:700 20px var(--font-metin);letter-spacing:.08em;
+  color:var(--vurgu);border:2px solid var(--vurgu);padding:6px 14px;border-radius:8px}
+.alt{position:absolute;left:120px;right:120px;bottom:40px;display:flex;justify-content:space-between;
+  font-size:20px;color:var(--soluk)}
+button.dugme{font:600 26px var(--font-metin);color:var(--zemin);background:var(--metin);border:0;
+  padding:14px 28px;border-radius:12px;cursor:pointer}
+button.dugme.ikincil{background:transparent;color:var(--metin);border:2px solid var(--metin)}
+input[type=range]{width:520px;accent-color:var(--vurgu)}
+/* Adımlar (fragment) */
+[data-adim]{opacity:0;transform:translateY(14px);transition:opacity .35s,transform .35s;pointer-events:none}
+[data-adim].goster{opacity:1;transform:none;pointer-events:auto}
+.not{display:none}
+/* İlerleme çizgisi (yalnız sunucu zamanlayıcısı açıkken) */
+#ilerleme{position:absolute;left:0;bottom:0;height:8px;width:0;background:var(--vurgu);z-index:5}
+#bekleme{position:absolute;inset:0;background:#000;display:none;z-index:9}
+/* Genel bakış */
+body.genel #sahne{transform:none!important;position:static;width:auto;height:auto;overflow:auto;background:var(--zemin);
+  display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:32px}
+body.genel html,body.genel{overflow:auto}
+body.genel .slayt{display:flex;position:relative;inset:auto;zoom:.2;border:6px solid var(--cizgi);cursor:pointer;height:1080px;width:1920px}
+body.genel .slayt.aktif{border-color:var(--vurgu)}
+body.genel [data-adim]{opacity:1;transform:none}
+#yardim{position:absolute;inset:0;background:rgba(0,0,0,.82);color:#fff;display:none;z-index:10;
+  padding:120px;font:500 34px/1.7 var(--font-metin)}
+/* Sunucu penceresi */
+body.sunucu{background:#10131c;color:#eee;overflow:auto;font:20px/1.5 var(--font-metin)}
+body.sunucu #sahne{display:none}
+#sunucuPanel{display:none;padding:24px}
+body.sunucu #sunucuPanel{display:block}
+#sunucuPanel .sat{display:flex;gap:24px;align-items:baseline;margin-bottom:14px}
+#sunucuPanel .buyuk{font:700 56px var(--font-baslik)}
+#sunucuNot{font-size:28px;line-height:1.55;background:#171c2a;padding:24px;border-radius:12px;min-height:280px;white-space:pre-wrap}
+/* PDF / yazdırma: her slayt bir sayfa, tüm adımlar görünür */
+@page{size:1920px 1080px;margin:0}
+@media print{
+  html,body{overflow:visible;background:#fff;height:auto}
+  #sahne{position:static;transform:none!important;width:1920px;height:auto;overflow:visible}
+  .slayt{display:flex!important;position:relative;inset:auto;width:1920px;height:1080px;page-break-after:always;break-after:page}
+  [data-adim]{opacity:1!important;transform:none!important}
+  #ilerleme,#bekleme,#yardim,#sunucuPanel{display:none!important}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+<main id="sahne">
+
+<!-- ÖRNEK 1 — Açılış -->
+<section class="slayt" data-sure="40" data-baslik="Açılış">
+  <div class="kicker">Klinik Embriyoloji Kongresi 2027</div>
+  <h1>Sunum başlığı buraya;<br><span class="vurgu">tek güçlü cümle.</span></h1>
+  <div class="ayrac"></div>
+  <p class="soluk">Ad Soyad · Kurum · iletişim</p>
+  <aside class="not">Açılış notu: ilk 20 saniyede dinleyiciye ne vereceksin?</aside>
+</section>
+
+<!-- ÖRNEK 2 — Şekil + geçiş düğmesi (naif ↔ doğru yöntem) -->
+<section class="slayt" data-sure="90" data-baslik="Şekil + geçiş">
+  <div class="kicker">Bulgu</div>
+  <h2>Başlık bir etiket değil, bulgunun kendisidir.</h2>
+  <div class="izgara i2">
+    <div>
+      <div id="ornekSekil" style="font-size:30px" class="kart">Şekil buraya (<code>&lt;img class="sekil" src="sonuc/fig_auc_dogrulama.svg"&gt;</code>)</div>
+      <p style="margin-top:24px" data-adim="1" class="soluk">Adım 1: ilk gözlem.</p>
+    </div>
+    <div>
+      <button class="dugme" onclick="this.textContent=(this.textContent==='Rastgele bölme')?'Hasta-gruplu doğrulama':'Rastgele bölme'">Rastgele bölme</button>
+      <p style="margin-top:24px" data-adim="2">Adım 2: yorum.</p>
+    </div>
+  </div>
+  <div class="etiket">SENTETİK VERİ</div>
+  <aside class="not">Bu sahnede söylenecek ana cümle ve geçiş.</aside>
+</section>
+
+<!-- ÖRNEK 3 — Kod (vurgulu satırlar) -->
+<section class="slayt" data-sure="60" data-baslik="Kod">
+  <div class="kicker">Yöntem</div>
+  <h2>Kod slaytı: 12 satırı geçme, 2 satırı vurgula.</h2>
+<pre>cv = <span class="h">GroupKFold(n_splits=5)</span>
+for tr, te in cv.split(X, y, <span class="h">groups=hasta_id</span>):
+    model.fit(X[tr], y[tr])
+    p[te] = model.predict_proba(X[te])[:, 1]</pre>
+  <aside class="not">Neden bu iki satır? Sızıntıyı kapatan tek değişiklik.</aside>
+</section>
+
+<!-- ÖRNEK 4 — Slider ile canlı etkileşim -->
+<section class="slayt" data-sure="60" data-baslik="Etkileşim">
+  <div class="kicker">Canlı</div>
+  <h2>Hasta başına embriyo sayısı arttıkça etkin örneklem büyüklüğü ne olur?</h2>
+  <div class="izgara i2">
+    <div class="kart">
+      <label style="font-size:28px">Hasta içi korelasyon ρ = <b id="rhoD">0.10</b></label><br><br>
+      <input id="rho" type="range" min="0" max="0.5" step="0.01" value="0.10"><br><br>
+      <label style="font-size:28px">Hasta başına embriyo m = <b id="mD">6</b></label><br><br>
+      <input id="m" type="range" min="1" max="12" step="1" value="6">
+    </div>
+    <div>
+      <div class="soluk" style="font-size:28px">Tasarım etkisi (1 + (m−1)·ρ)</div>
+      <div class="rakam" id="deff" data-sayi-ok="1">1.50</div>
+      <p class="soluk" style="font-size:28px">Etkin örneklem büyüklüğü ≈ n / tasarım etkisi.</p>
+    </div>
+  </div>
+  <aside class="not">Dinleyiciye iki slider'ı oynat, sonra rakamı yorumla.</aside>
+</section>
+
+<div id="ilerleme"></div><div id="bekleme"></div>
+<div id="yardim">→ ␣ sonraki · ← önceki · G genel bakış · P sunucu görünümü<br>T zamanlayıcı · F tam ekran · D tema · B karart · ? kapat</div>
+</main>
+
+<div id="sunucuPanel">
+  <div class="sat"><span class="buyuk" id="sGecen">00:00</span><span id="sPlan"></span><span id="sSlayt"></span></div>
+  <div id="sunucuNot"></div>
+  <p style="margin-top:16px;font-size:22px;opacity:.7" id="sSonraki"></p>
+  <p style="margin-top:20px"><button onclick="komut('geri')">← Geri</button> <button onclick="komut('ileri')">İleri →</button> <button onclick="komut('zaman')">Zamanlayıcıyı başlat/sıfırla</button></p>
+</div>
+
+<script>
+(function(){
+"use strict";
+var sahne=document.getElementById('sahne');
+var slaytlar=[].slice.call(document.querySelectorAll('.slayt'));
+var HEDEF_SN=18*60;           // toplam hedef süre (saniye); gerekirse değiştir
+var i=0, adim=0, t0=null, popup=null;
+var sunucuMu=/[?&]sunucu=1/.test(location.search);
+
+function olc(){var s=Math.min(innerWidth/1920,innerHeight/1080);
+  sahne.style.transform='translate('+(-960*s)+'px,'+(-540*s)+'px) scale('+s+')';}
+function adimlar(el){return [].slice.call(el.querySelectorAll('[data-adim]'));}
+function goster(n,geri){
+  i=Math.max(0,Math.min(slaytlar.length-1,n));
+  slaytlar.forEach(function(s,k){s.classList.toggle('aktif',k===i);});
+  var a=adimlar(slaytlar[i]);
+  adim=geri?a.length:0;
+  a.forEach(function(e,k){e.classList.toggle('goster',k<adim);});
+  try{history.replaceState(null,'','#s'+(i+1));}catch(e){}
+  ilerle(); yayinla();
+}
+function ileri(){var a=adimlar(slaytlar[i]);
+  if(adim<a.length){a[adim].classList.add('goster');adim++;yayinla();}
+  else if(i<slaytlar.length-1){goster(i+1);} }
+function geri(){var a=adimlar(slaytlar[i]);
+  if(adim>0){adim--;a[adim].classList.remove('goster');yayinla();}
+  else if(i>0){goster(i-1,true);} }
+function sure(k){return +(slaytlar[k].dataset.sure||60);}
+function planli(k){var t=0;for(var j=0;j<=k;j++)t+=sure(j);return t;}
+function ilerle(){document.getElementById('ilerleme').style.width=(100*(i+1)/slaytlar.length)+'%';}
+function mmss(sn){sn=Math.max(0,Math.round(sn));return ('0'+Math.floor(sn/60)).slice(-2)+':'+('0'+sn%60).slice(-2);}
+function zamanDugmesi(){t0=t0?null:Date.now();yayinla();}
+function not(k){var n=slaytlar[k].querySelector('.not');return n?n.textContent.trim():'(not yok)';}
+function durum(){return {i:i,n:slaytlar.length,t0:t0,not:not(i),
+  baslik:slaytlar[i].dataset.baslik||'',
+  sonraki:i<slaytlar.length-1?(slaytlar[i+1].dataset.baslik||'Sonraki'):'(son slayt)',
+  plan:planli(i),hedef:HEDEF_SN};}
+function yayinla(){
+  var d=durum();
+  if(sunucuMu) return;
+  if(popup&&!popup.closed){popup.postMessage({tur:'durum',d:d},'*');}
+}
+function sunucuCiz(d){
+  document.getElementById('sSlayt').textContent=(d.i+1)+' / '+d.n+' — '+d.baslik;
+  document.getElementById('sPlan').textContent='plan: '+mmss(d.plan)+' / '+mmss(d.hedef);
+  document.getElementById('sunucuNot').textContent=d.not;
+  document.getElementById('sSonraki').textContent='Sonraki: '+d.sonraki;
+  sunucuT0=d.t0;
+}
+var sunucuT0=null;
+setInterval(function(){
+  var tt=sunucuMu?sunucuT0:t0;
+  if(sunucuMu){document.getElementById('sGecen').textContent=tt?mmss((Date.now()-tt)/1000):'--:--';}
+  else if(popup&&!popup.closed){yayinla();}
+},1000);
+
+if(sunucuMu){
+  document.body.classList.add('sunucu'); document.title='Sunucu görünümü';
+  window.addEventListener('message',function(e){if(e.data&&e.data.tur==='durum')sunucuCiz(e.data.d);});
+  window.komut=function(k){if(window.opener)window.opener.postMessage({tur:'komut',k:k},'*');};
+}else{
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.tur!=='komut')return;
+    if(e.data.k==='ileri')ileri(); if(e.data.k==='geri')geri(); if(e.data.k==='zaman')zamanDugmesi();});
+  // Ekranı gezdirme
+  addEventListener('keydown',function(e){
+    var k=e.key;
+    if(k==='ArrowRight'||k===' '||k==='PageDown'||k==='Enter'){e.preventDefault();ileri();}
+    else if(k==='ArrowLeft'||k==='PageUp'||k==='Backspace'){e.preventDefault();geri();}
+    else if(k==='Home')goster(0); else if(k==='End')goster(slaytlar.length-1);
+    else if(k==='f'||k==='F'){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();}
+    else if(k==='g'||k==='G'){document.body.classList.toggle('genel');olc();}
+    else if(k==='d'||k==='D'){var h=document.documentElement;h.dataset.tema=h.dataset.tema==='koyu'?'acik':'koyu';}
+    else if(k==='b'||k==='B'){var b=document.getElementById('bekleme');b.style.display=b.style.display==='block'?'none':'block';}
+    else if(k==='t'||k==='T'){zamanDugmesi();}
+    else if(k==='?'){var y=document.getElementById('yardim');y.style.display=y.style.display==='block'?'none':'block';}
+    else if(k==='p'||k==='P'){popup=window.open(location.pathname+'?sunucu=1','sunucu','width=900,height=700');setTimeout(yayinla,600);}
+  });
+  slaytlar.forEach(function(s,k){s.addEventListener('click',function(){
+    if(document.body.classList.contains('genel')){document.body.classList.remove('genel');olc();goster(k);}});});
+}
+addEventListener('resize',olc);
+var h=/^#s(\d+)$/.exec(location.hash); olc(); goster(h?(+h[1]-1):0);
+
+/* Örnek 4 — slider mantığı (kendi etkileşimlerini bu kalıpla yaz) */
+var rho=document.getElementById('rho'),m=document.getElementById('m');
+function hesapla(){document.getElementById('rhoD').textContent=(+rho.value).toFixed(2);
+  document.getElementById('mD').textContent=m.value;
+  document.getElementById('deff').textContent=(1+(m.value-1)*rho.value).toFixed(2);}
+if(rho&&m){rho.oninput=hesapla;m.oninput=hesapla;hesapla();}
+})();
+</script>
+</body>
+</html>

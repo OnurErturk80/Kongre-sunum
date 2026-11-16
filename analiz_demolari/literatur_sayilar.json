@@ -1,0 +1,53 @@
+{
+  "_not": "Slayta giren her literatür sayısı buradan gelir. Sayılar 14 Kasım 2026'da PubMed kayıtlarının özetlerinde görülüp aynen aktarıldı; 'tam_metin' ile işaretli alanlar makalenin PMC tam metninden alındı ve sunumdan önce yeniden doğrulanmalıdır.",
+  "illingworth_2024": {
+    "kunye": "Illingworth PJ ve ark. Nat Med 2024;30(11):3114-3120", "pmid": "39122964", "doi": "10.1038/s41591-024-03166-5",
+    "hasta": 1066, "klinik": 14, "gebelik_yz": 46.5, "gebelik_morfoloji": 48.2,
+    "risk_farki": -1.7, "ga_alt": -7.7, "ga_ust": 4.3, "esdegerlik_siniri": 5,
+    "tam_metin": {"sure_yz_sn": 21.3, "sure_morfoloji_sn": 208.3, "canli_dogum_yz": 39.8, "canli_dogum_morfoloji": 43.5}
+  },
+  "bhide_2026": {
+    "kunye": "Bhide P ve ark. Hum Reprod Update 2026 (çevrimiçi 29 Ekim)", "pmid": "42955792", "doi": "10.1093/humupd/dmag035",
+    "rkc": 8, "hasta": 5642,
+    "genel": {"aor": 0.97, "alt": 0.81, "ust": 1.15},
+    "kultur": {"aor": 1.02, "alt": 0.84, "ust": 1.23},
+    "secim": {"aor": 0.92, "alt": 0.78, "ust": 1.07}
+  },
+  "salih_2023": {
+    "kunye": "Salih M ve ark. Hum Reprod Open 2023;2023(3):hoad031", "pmid": "37588797", "doi": "10.1093/hropen/hoad031",
+    "calisma": 20, "yz_morfoloji_dogruluk": 75.5, "embriyolog_morfoloji_dogruluk": 65.4,
+    "yz_gebelik_dogruluk": 77.8, "embriyolog_gebelik_dogruluk": 64
+  },
+  "berntsen_2022": {
+    "kunye": "Berntsen J ve ark. PLoS One 2022;17(2):e0262661", "pmid": "35108306", "doi": "10.1371/journal.pone.0262661",
+    "merkez": 18, "embriyo": 115832, "auc_transfer": 0.67, "auc_tum": 0.95, "yeni_klinik_alt": 0.60, "yeni_klinik_ust": 0.75
+  },
+  "barnes_2023": {
+    "kunye": "Barnes J ve ark. Lancet Digit Health 2023;5(1):e28-e40", "pmid": "36543475", "doi": "10.1016/S2589-7500(22)00213-8",
+    "embriyo": 10378, "test_auc": 0.737, "dis_auc_1": 0.702, "dis_auc_2": 0.715
+  },
+  "bamford_2023": {
+    "kunye": "Bamford T ve ark. Hum Reprod 2023;38(4):569-581", "pmid": "36825452", "doi": "10.1093/humrep/dead034",
+    "embriyo": 8147, "klinik": 9, "auc_lojistik": 0.71, "auc_rf": 0.68, "auc_xgb": 0.63, "auc_derin": 0.63
+  },
+  "xin_2024": {
+    "kunye": "Xin X ve ark. EClinicalMedicine 2024;77:102897", "pmid": "39513188", "doi": "10.1016/j.eclinm.2024.102897",
+    "calisma": 12, "embriyo": 6879, "duyarlilik": 0.71, "ozgulluk": 0.75, "auc": 0.80
+  },
+  "thirumalaraju_2025": {
+    "kunye": "Thirumalaraju P ve ark. Fertil Steril;125(2):277-286 (çevrimiçi Ağustos 2025)", "pmid": "40876725", "doi": "10.1016/j.fertnstert.2025.08.021",
+    "kopya_model": 50, "kendall_w": 0.35, "kritik_hata_yuzde": 15, "auc": 0.60
+  },
+  "eshre_2023": {
+    "kunye": "ESHRE Add-ons çalışma grubu (Lundin K ve ark.). Hum Reprod 2023;38(11):2062-2104", "pmid": "37747409", "doi": "10.1093/humrep/dead184",
+    "oneri": 42, "yuksek_kanit": 0, "orta_kanit": 4
+  },
+  "chavez_badiola_2026": {
+    "kunye": "Chavez-Badiola A ve ark. Hum Reprod 2026;41(2):214-230", "pmid": "41453368", "doi": "10.1093/humrep/deaf240",
+    "olgu": 11, "canli_dogum": 5, "fert_otomatik": 64.3, "fert_manuel": 81
+  },
+  "yayginlik": {
+    "_not": "Hakemli kaynak değil: firma ve ağ basın bültenleri (Fairtility–First Fertility, 27 Temmuz 2026; futurefertility.com; FutureLife–Alife Health, 5 Mayıs 2026).",
+    "embriyo_platformu_klinik": 100, "oosit_araci_klinik": 300, "avrupa_agi_ulke": 16
+  }
+}

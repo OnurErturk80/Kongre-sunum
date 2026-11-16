@@ -1,0 +1,15 @@
+{
+  "veri_kaynagi": "SENTETIK",
+  "seed": 2027,
+  "n_hasta": 700,
+  "n_siklus": 1065,
+  "n_embriyo": 4428,
+  "gercek_parametreler": {
+    "kesisim": -0.15,
+    "yas_beta_yil_basina": -0.09,
+    "embriyo_kalitesi_beta": 0.8,
+    "hasta_sd": 0.8,
+    "siklus_sd": 0.4,
+    "zaman_kaymasi_2023_sonrasi": 0.35
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "n_embriyo": 4428,
+  "n_siklus": 1065,
+  "n_hasta": 700,
+  "olay_orani": 0.505420054200542,
+  "embriyo_basina_hasta_ort": 6.325714285714286,
+  "ci": {
+    "yas_c": {
+      "beta_naif": -0.07831343178473353,
+      "beta_gee": -0.07725577434897997,
+      "ci_naif": [
+        -0.09346961630342905,
+        -0.06315724726603801
+      ],
+      "ci_gee": [
+        -0.09514275493701035,
+        -0.059368793760949584
+      ],
+      "genislik_orani": 1.1801770139421541
+    },
+    "d3_fragmantasyon": {
+      "beta_naif": -0.09772784325076686,
+      "beta_gee": -0.08395138977819343,
+      "ci_naif": [
+        -0.11069212943516622,
+        -0.0847635570663675
+      ],
+      "ci_gee": [
+        -0.09723951182044799,
+        -0.07066326773593887
+      ],
+      "genislik_orani": 1.0249790735293154
+    },
+    "d3_morfoloji": {
+      "beta_naif": 0.22289552777433624,
+      "beta_gee": 0.25852730614274955,
+      "ci_naif": [
+        0.15429501365655376,
+        0.29149604189211875
+      ],
+      "ci_gee": [
+        0.19043021437506125,
+        0.32662439791043785
+      ],
+      "genislik_orani": 0.9926615367746392
+    }
+  },
+  "icc_yaklasik_gee_rho": 0.09271743378416152,
+  "auc": {
+    "gbm": {
+      "ad": "Gradyan artırma",
+      "rastgele": 0.6857684413268532,
+      "hasta_gruplu": 0.6455055067921864,
+      "hasta_gruplu_ga": [
+        0.6288065975588217,
+        0.6602061605807503
+      ],
+      "zamansal": 0.6672820087205666
+    },
+    "lr": {
+      "ad": "Lojistik regresyon",
+      "rastgele": 0.7055212783755881,
+      "hasta_gruplu": 0.7035472800649635,
+      "hasta_gruplu_ga": [
+        0.6865941699996123,
+        0.7168837323063095
+      ],
+      "zamansal": 0.6992365690154426
+    }
+  },
+  "kalibrasyon_zamansal_lr": {
+    "egim": 0.9062471476475061,
+    "kesisim_offset": 0.4069312754767974,
+    "brier": 0.22580999286139566
+  },
+  "zamansal_bolme_esik": 2023.5,
+  "tasarim_etkisi": 1.4937865616390773,
+  "etkin_n_embriyo": 2964.2789095259486,
+  "dca": {
+    "model_ustun_esik_min": 0.05,
+    "model_ustun_esik_max": 0.85
+  },
+  "gercek_parametreler": {
+    "kesisim": -0.15,
+    "yas_beta_yil_basina": -0.09,
+    "embriyo_kalitesi_beta": 0.8,
+    "hasta_sd": 0.8,
+    "siklus_sd": 0.4,
+    "zaman_kaymasi_2023_sonrasi": 0.35
+  },
+  "ozet": "Gradyan artırma: rastgele bölmede AUC 0.686, hasta-gruplu bölmede 0.646 (%95 GA 0.629–0.660), zamansal bölmede 0.667."
+}

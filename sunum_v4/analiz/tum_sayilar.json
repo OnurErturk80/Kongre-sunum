@@ -1,0 +1,2519 @@
+{
+ "_not": "Sunum v4 için tek sayı kaynağı. bolumN = bolumler/0N_sayilar.json (aynen); demo_* = /home/claude/sunum/analiz altındaki sentetik demo sonuçları (aynen); depo = git log'dan bu derlemede sayıldı; metinden_sayilar = bölüm JSON'larında metin olarak duran değerlerin içindeki sayılar.",
+ "bolum1": {
+  "_not": "Bölüm 1 slaytlarına ve kartlarına giren her sayı. PubMed kayıtları 14 Kasım 2026'da görüldü. 'ozet' = PubMed özeti; 'tam_metin' = PMC tam metni. 'ikincil' alanı true olanlar birincil kaynakta doğrulanamadı.",
+  "yao_2025_hasta": {
+   "deger": 4635,
+   "kaynak": "PMID 40246850",
+   "okuma": "ozet"
+  },
+  "yao_2025_merkez": {
+   "deger": 6,
+   "kaynak": "PMID 40246850",
+   "okuma": "ozet"
+  },
+  "canon_2024_n": {
+   "deger": 291,
+   "kaynak": "PMID 39164339",
+   "okuma": "ozet"
+  },
+  "canon_2024_mii_yz": {
+   "deger": 12.2,
+   "kaynak": "PMID 39164339",
+   "okuma": "ozet"
+  },
+  "canon_2024_mii_kontrol": {
+   "deger": 11.24,
+   "kaynak": "PMID 39164339",
+   "okuma": "ozet"
+  },
+  "canon_2024_p": {
+   "deger": 0.16,
+   "kaynak": "PMID 39164339",
+   "okuma": "ozet"
+  },
+  "correa_2024_planlanan_n": {
+   "deger": 236,
+   "kaynak": "PMID 38212837",
+   "okuma": "ozet"
+  },
+  "wygocki_2026_tarama": {
+   "deger": 5508,
+   "kaynak": "PMID 41485151",
+   "okuma": "ozet"
+  },
+  "wygocki_2026_f1_10mm": {
+   "deger": 93.3,
+   "birim": "%",
+   "kaynak": "PMID 41485151",
+   "okuma": "ozet"
+  },
+  "wygocki_2026_sure_kat": {
+   "deger": 2.5,
+   "birim": "kat daha kısa işaretleme süresi",
+   "kaynak": "PMID 41485151",
+   "okuma": "ozet"
+  },
+  "cimadomo_2025_oosit": {
+   "deger": 1179,
+   "kaynak": "PMID 40759152",
+   "okuma": "ozet"
+  },
+  "cimadomo_2025_auc": {
+   "deger": 0.6,
+   "kaynak": "PMID 40759152",
+   "okuma": "ozet"
+  },
+  "montjean_2024_mii": {
+   "deger": 646,
+   "kaynak": "PMID 38651413",
+   "okuma": "ozet"
+  },
+  "chavez_badiola_2026_olgu": {
+   "deger": 11,
+   "kaynak": "PMID 41453368",
+   "okuma": "ozet"
+  },
+  "chavez_badiola_2026_canli_dogum": {
+   "deger": 5,
+   "kaynak": "PMID 41453368",
+   "okuma": "ozet"
+  },
+  "chavez_badiola_2026_fert_oto": {
+   "deger": 64.3,
+   "birim": "%",
+   "kaynak": "PMID 41453368",
+   "okuma": "ozet"
+  },
+  "chavez_badiola_2026_fert_manuel": {
+   "deger": 81,
+   "birim": "%",
+   "kaynak": "PMID 41453368",
+   "okuma": "ozet"
+  },
+  "illingworth_2024_hasta": {
+   "deger": 1066,
+   "kaynak": "PMID 39122964",
+   "okuma": "ozet"
+  },
+  "illingworth_2024_klinik": {
+   "deger": 14,
+   "kaynak": "PMID 39122964",
+   "okuma": "ozet"
+  },
+  "illingworth_2024_gebelik_yz": {
+   "deger": 46.5,
+   "birim": "%",
+   "kaynak": "PMID 39122964",
+   "okuma": "ozet"
+  },
+  "illingworth_2024_gebelik_morf": {
+   "deger": 48.2,
+   "birim": "%",
+   "kaynak": "PMID 39122964",
+   "okuma": "ozet"
+  },
+  "xin_2024_calisma": {
+   "deger": 12,
+   "kaynak": "PMID 39513188",
+   "okuma": "ozet",
+   "not": "önceki oturumda doğrulandı"
+  },
+  "xin_2024_auc": {
+   "deger": 0.8,
+   "kaynak": "PMID 39513188",
+   "okuma": "ozet",
+   "not": "önceki oturumda doğrulandı"
+  },
+  "rajendran_2024_auc": {
+   "deger": 0.76,
+   "kaynak": "PMID 39237547",
+   "okuma": "ozet"
+  },
+  "liang_2023_n": {
+   "deger": 240,
+   "kaynak": "PMID 37248145",
+   "okuma": "ozet"
+  },
+  "liang_2023_auc": {
+   "deger": 0.825,
+   "kaynak": "PMID 37248145",
+   "okuma": "ozet"
+  },
+  "chervenak_2023_ifade": {
+   "deger": 147,
+   "kaynak": "PMID 37217092",
+   "okuma": "ozet"
+  },
+  "chervenak_2023_hatali": {
+   "deger": 9,
+   "kaynak": "PMID 37217092",
+   "okuma": "ozet"
+  },
+  "chervenak_2023_hatali_yuzde": {
+   "deger": 6.12,
+   "birim": "%",
+   "kaynak": "PMID 37217092",
+   "okuma": "ozet"
+  },
+  "liu_2026_halusinasyon_grpo": {
+   "deger": 15,
+   "birim": "%",
+   "kaynak": "PMID 42766421",
+   "okuma": "ozet"
+  },
+  "liu_2026_halusinasyon_sft": {
+   "deger": 18.5,
+   "birim": "%",
+   "kaynak": "PMID 42766421",
+   "okuma": "ozet"
+  },
+  "lee_2026_n": {
+   "deger": 37,
+   "kaynak": "PMID 42938674",
+   "okuma": "ozet"
+  },
+  "kaufmann_1997_dogruluk": {
+   "deger": 59,
+   "birim": "%",
+   "kaynak": "PMID 9262277",
+   "okuma": "ozet"
+  },
+  "kaufmann_1997_degisken": {
+   "deger": 4,
+   "kaynak": "PMID 9262277",
+   "okuma": "ozet"
+  },
+  "banerjee_2010_auc_model": {
+   "deger": 0.8,
+   "kaynak": "PMID 20643955",
+   "okuma": "ozet"
+  },
+  "banerjee_2010_auc_yas": {
+   "deger": 0.68,
+   "kaynak": "PMID 20643955",
+   "okuma": "ozet"
+  },
+  "curchoe_2019_bildiri_2017": {
+   "deger": 2,
+   "not": "ASRM 1 + ESHRE 1",
+   "kaynak": "PMID 30690654",
+   "okuma": "ozet"
+  },
+  "curchoe_2019_bildiri_2018": {
+   "deger": 16,
+   "not": "ASRM 9 + ESHRE 7",
+   "kaynak": "PMID 30690654",
+   "okuma": "ozet"
+  },
+  "khosravi_2019_goruntu": {
+   "deger": 50000,
+   "not": "yaklaşık ('about 50,000 images')",
+   "kaynak": "PMID 31304368",
+   "okuma": "ozet"
+  },
+  "tran_2019_embriyo": {
+   "deger": 10638,
+   "kaynak": "PMID 31111884",
+   "okuma": "ozet"
+  },
+  "tran_2019_klinik": {
+   "deger": 8,
+   "kaynak": "PMID 31111884",
+   "okuma": "ozet"
+  },
+  "tran_2019_auc": {
+   "deger": 0.93,
+   "not": "5 katlı çapraz doğrulama",
+   "kaynak": "PMID 31111884",
+   "okuma": "ozet"
+  },
+  "letterie_2020_dogruluk_durdur": {
+   "deger": 0.92,
+   "kaynak": "PMID 33012555",
+   "okuma": "ozet"
+  },
+  "barnes_2023_test_auc": {
+   "deger": 0.737,
+   "kaynak": "PMID 36543475",
+   "okuma": "ozet",
+   "not": "önceki oturumda doğrulandı"
+  },
+  "costa_borges_2023_bebek": {
+   "deger": 2,
+   "kaynak": "PMID 37400320",
+   "okuma": "ozet"
+  },
+  "costa_borges_2023_fert_oto": {
+   "deger": "13/14",
+   "kaynak": "PMID 37400320",
+   "okuma": "ozet"
+  },
+  "costa_borges_2023_fert_manuel": {
+   "deger": "16/18",
+   "kaynak": "PMID 37400320",
+   "okuma": "ozet"
+  },
+  "fjeldstad_2024_goruntu": {
+   "deger": 37133,
+   "kaynak": "PMID 38552566",
+   "okuma": "ozet"
+  },
+  "fjeldstad_2024_dis_auc": {
+   "deger": 0.63,
+   "kaynak": "PMID 38552566",
+   "okuma": "ozet"
+  },
+  "mendizabal_ruiz_2025_otonom_yuzde": {
+   "deger": 49.6,
+   "birim": "%",
+   "kaynak": "PMID 40210512",
+   "okuma": "ozet"
+  },
+  "mendizabal_ruiz_2025_adim": {
+   "deger": 115,
+   "kaynak": "PMID 40210512",
+   "okuma": "ozet"
+  },
+  "fda_510k_embriyo_yz": {
+   "deger": "Eylül 2025 (CHLOE Blast)",
+   "kaynak": "PMID 42769651",
+   "okuma": "tam_metin",
+   "ikincil": true,
+   "not": "Birincil FDA kaydı görülmedi; DOĞRULANAMADI"
+  },
+  "ce_alife_embryo_predict": {
+   "deger": "Ekim 2025",
+   "kaynak": "PMID 42769651",
+   "okuma": "tam_metin",
+   "ikincil": true,
+   "not": "Birincil kayıt görülmedi; DOĞRULANAMADI"
+  }
+ },
+ "bolum2": {
+  "_not": "Bölüm 2 sayıları. okuma: ozet | tam_metin | web. Web sayıları slaytta 'firma/klinik beyanı, hakemli değil' etiketi taşır. dogrulama alanı web kaynakları için.",
+  "chloe_klinik_sayisi": {
+   "deger": "100'den fazla klinik",
+   "aynen": "more than 100 fertility clinics across North America, Europe, Asia-Pacific, and Latin America",
+   "kaynak": "W1 https://firstfertility.com/press-release/fairtility-and-first-fertility-expand-strategic-partnership-to-deploy-chloe-across-multiple-ivf-laboratories/",
+   "okuma": "web",
+   "etiket": "firma/klinik beyanı, hakemli değil",
+   "tarih": "2026-07-29",
+   "dogrulama": "WebFetch 2026-11-14"
+  },
+  "chloe_bolge_sayisi": {
+   "deger": 4,
+   "kaynak": "W1",
+   "okuma": "web",
+   "etiket": "firma/klinik beyanı, hakemli değil",
+   "dogrulama": "WebFetch 2026-11-14"
+  },
+  "magenta_ortak_klinik": {
+   "deger": "300'den fazla klinik",
+   "aynen": "Explore over 300 clinics worldwide.",
+   "kaynak": "W2 https://futurefertility.com/en/partner-fertility-clinics/",
+   "okuma": "web",
+   "etiket": "firma/klinik beyanı, hakemli değil",
+   "dogrulama": "WebFetch 2026-11-14",
+   "uyari": "cümlede ürün adı geçmiyor; firmanın ortak klinik sayfası"
+  },
+  "magenta_ulke_listesi": {
+   "deger": 32,
+   "kaynak": "W2",
+   "okuma": "web",
+   "etiket": "firma/klinik beyanı, hakemli değil",
+   "dogrulama": "WebFetch 2026-11-14",
+   "uyari": "sayfadaki ülke listesinden sayıldı; Türkiye ve Japonya listede görülmedi"
+  },
+  "ag_klinik_sayisi": {
+   "deger": 60,
+   "aynen": "operates 60 clinics across 16 countries",
+   "kaynak": "W3 https://futurelifegroup.com/en/press/18-futurelife-in-partnership-with-alife-health/",
+   "okuma": "web",
+   "etiket": "firma/klinik beyanı, hakemli değil",
+   "tarih": "2026-05-05",
+   "dogrulama": "WebFetch 2026-11-14"
+  },
+  "ag_ulke_sayisi": {
+   "deger": 16,
+   "kaynak": "W3",
+   "okuma": "web",
+   "etiket": "firma/klinik beyanı, hakemli değil",
+   "dogrulama": "WebFetch 2026-11-14",
+   "uyari": "'Avrupa' ifadesi bu oturumda görülmedi"
+  },
+  "ag_yillik_siklus": {
+   "deger": "77.000'den fazla",
+   "aynen": "performs more than 77,000 IVF cycles annually",
+   "kaynak": "W3",
+   "okuma": "web",
+   "etiket": "firma/klinik beyanı, hakemli değil",
+   "dogrulama": "WebFetch 2026-11-14"
+  },
+  "turkiye_embriyo_secimi_baslangic": {
+   "deger": 2022,
+   "kaynak": "W4 (URL kayıtlı değil)",
+   "okuma": "web",
+   "etiket": "firma/klinik beyanı, hakemli değil",
+   "dogrulama": "önceki oturumda tarayıcıda görüldü, 10 Kasım 2026",
+   "not": "bir merkez; ad verilmez"
+  },
+  "turkiye_yz_sperm_secimi_merkez": {
+   "deger": 2,
+   "kaynak": "W4 (URL kayıtlı değil)",
+   "okuma": "web",
+   "etiket": "firma/klinik beyanı, hakemli değil",
+   "dogrulama": "önceki oturumda tarayıcıda görüldü, 10 Kasım 2026",
+   "not": "iki merkez, farklı ürünler; ad verilmez"
+  },
+  "hindistan_ag_klinik": {
+   "deger": "100'den fazla klinik (Kasım 2022 duyurusu)",
+   "kaynak": "W4 (URL kayıtlı değil)",
+   "okuma": "web",
+   "etiket": "firma/klinik beyanı, hakemli değil",
+   "dogrulama": "önceki oturumda tarayıcıda görüldü, 10 Kasım 2026",
+   "uyari": "güncel durum bilinmiyor"
+  },
+  "ispanya_grup_klinik": {
+   "deger": 7,
+   "kaynak": "W4 (URL kayıtlı değil)",
+   "okuma": "web",
+   "etiket": "firma/klinik beyanı, hakemli değil",
+   "dogrulama": "önceki oturumda tarayıcıda görüldü, 10 Kasım 2026"
+  },
+  "abd_ag_sube": {
+   "deger": "25+ şube (Stim Assist)",
+   "kaynak": "W4 (URL kayıtlı değil)",
+   "okuma": "web",
+   "etiket": "firma/klinik beyanı, hakemli değil",
+   "dogrulama": "önceki oturumda tarayıcıda görüldü, 10 Kasım 2026"
+  },
+  "duyuru_ulke_sayisi_en_az": {
+   "deger": 11,
+   "kaynak": "W4 ülke listesi",
+   "okuma": "web",
+   "etiket": "firma/klinik beyanı, hakemli değil",
+   "dogrulama": "önceki oturumda tarayıcıda görüldü, 10 Kasım 2026",
+   "not": "ABD, Meksika, Kolombiya, İspanya, İngiltere, İsviçre, Avustralya, Japonya, Endonezya, Hindistan, Türkiye"
+  },
+  "japonya_davet_tesis": {
+   "deger": 616,
+   "kaynak": "PMID 39493437, DOI 10.1016/j.xagr.2024.100397",
+   "okuma": "tam_metin"
+  },
+  "japonya_yanit_tesis": {
+   "deger": 345,
+   "kaynak": "PMID 39493437",
+   "okuma": "tam_metin"
+  },
+  "japonya_yanit_orani": {
+   "deger": "%56.0",
+   "kaynak": "PMID 39493437",
+   "okuma": "tam_metin"
+  },
+  "japonya_tlt_tesis": {
+   "deger": 195,
+   "yuzde": "%56.5 (195/345); özet ve key findings %54.6",
+   "kaynak": "PMID 39493437",
+   "okuma": "tam_metin",
+   "uyari": "makale içi tutarsızlık"
+  },
+  "japonya_tlt_ile_embriyo_degerlendirme": {
+   "deger": 184,
+   "yuzde": "%94.3 (184/195)",
+   "kaynak": "PMID 39493437",
+   "okuma": "tam_metin"
+  },
+  "japonya_tlt_artı_yz_skor_tesis": {
+   "deger": 57,
+   "yuzde": "%31.0 (payda 184)",
+   "kaynak": "PMID 39493437",
+   "okuma": "tam_metin"
+  },
+  "japonya_yz_araclari_icinde_idascore": {
+   "deger": "%63.2",
+   "aynen": "the intelligence data analysis score (63.2%) had the highest utilization rate",
+   "kaynak": "PMID 39493437",
+   "okuma": "tam_metin"
+  },
+  "japonya_yz_tesis_yanit_verenlere_orani": {
+   "deger": "≈ 1/6 (57/345)",
+   "kaynak": "PMID 39493437 sayılarından hesap",
+   "okuma": "tam_metin",
+   "not": "hesaplanmış; yalnız sunucu notunda"
+  },
+  "uluslararasi_anket_yanit": {
+   "deger": 702,
+   "kaynak": "PMID 39939196, DOI 10.1016/j.rbmo.2024.104435",
+   "okuma": "ozet"
+  },
+  "uluslararasi_anket_soru": {
+   "deger": 32,
+   "kaynak": "PMID 39939196",
+   "okuma": "ozet"
+  },
+  "uluslararasi_anket_tarih": {
+   "deger": "17 Temmuz–31 Ağustos 2023",
+   "kaynak": "PMID 39939196",
+   "okuma": "ozet"
+  },
+  "firma_sitesi_sayisi": {
+   "deger": 21,
+   "kaynak": "PMID 42923733, DOI 10.1093/hropen/hoag086",
+   "okuma": "ozet"
+  },
+  "firma_yz_araci_sayisi": {
+   "deger": 30,
+   "kaynak": "PMID 42923733",
+   "okuma": "ozet"
+  },
+  "firma_fayda_belirten": {
+   "deger": "21/21 (%100)",
+   "kaynak": "PMID 42923733",
+   "okuma": "ozet"
+  },
+  "firma_risk_acikca_belirten": {
+   "deger": 0,
+   "aynen": "no websites explicitly outlined potential risks associated with AI use",
+   "kaynak": "PMID 42923733",
+   "okuma": "ozet"
+  },
+  "firma_orneklem_buyuklugu_aciklayan": {
+   "deger": "%33.3 (n=7)",
+   "kaynak": "PMID 42923733",
+   "okuma": "ozet"
+  },
+  "chang_benimseme_2022_2025": {
+   "deger": "%24.8 → %53.2",
+   "kaynak": "PMID 42769651 (Chang 2026, atıf no. 10)",
+   "okuma": "tam_metin",
+   "uyari": "ikincil aktarım; asıl anket DOĞRULANAMADI; slayta önerilmiyor"
+  },
+  "chang_yatirim_niyeti_2025": {
+   "deger": "%83.62",
+   "kaynak": "PMID 42769651 (atıf no. 10)",
+   "okuma": "tam_metin",
+   "uyari": "asıl kaynak DOĞRULANAMADI; slayta önerilmiyor"
+  },
+  "chang_maliyet_engeli_2025": {
+   "deger": "%38.01",
+   "kaynak": "PMID 42769651",
+   "okuma": "tam_metin",
+   "uyari": "asıl kaynak DOĞRULANAMADI; slayta önerilmiyor"
+  }
+ },
+ "bolum3": {
+  "_not": "Bölüm 3 (etki). Tüm sayılar 14 Kasım 2026'da PubMed kaydından (özet/tam metin) aynen alındı. 'hesaplanmis' alanı olanlar kaynakta yazmayan, tarafımızdan türetilmiş değerlerdir. Ondalık ayırıcı nokta; bin ayırıcısı kullanılmadı.",
+  "illingworth_n_hasta": {
+   "deger": 1066,
+   "kaynak": "PMID 39122964",
+   "okuma": "tam_metin",
+   "not": "533/533; 14 klinik"
+  },
+  "illingworth_klinik_sayisi": {
+   "deger": 14,
+   "kaynak": "PMID 39122964",
+   "okuma": "tam_metin"
+  },
+  "illingworth_klinik_gebelik_yz_yuzde": {
+   "deger": 46.5,
+   "kaynak": "PMID 39122964",
+   "okuma": "tam_metin",
+   "pay": "248/533"
+  },
+  "illingworth_klinik_gebelik_kontrol_yuzde": {
+   "deger": 48.2,
+   "kaynak": "PMID 39122964",
+   "okuma": "tam_metin",
+   "pay": "257/533"
+  },
+  "illingworth_klinik_gebelik_RD": {
+   "deger": {
+    "nokta": -1.7,
+    "alt": -7.7,
+    "ust": 4.3
+   },
+   "kaynak": "PMID 39122964",
+   "okuma": "tam_metin",
+   "birim": "yüzde puan",
+   "P": 0.62
+  },
+  "illingworth_klinik_gebelik_RR": {
+   "deger": {
+    "nokta": 0.96,
+    "alt": 0.85,
+    "ust": 1.1
+   },
+   "kaynak": "PMID 39122964",
+   "okuma": "tam_metin"
+  },
+  "illingworth_noninferiority_siniri": {
+   "deger": -5,
+   "kaynak": "PMID 39122964",
+   "okuma": "tam_metin",
+   "birim": "yüzde puan"
+  },
+  "illingworth_canli_dogum_yz_yuzde": {
+   "deger": 39.8,
+   "kaynak": "PMID 39122964",
+   "okuma": "tam_metin",
+   "pay": "212/533"
+  },
+  "illingworth_canli_dogum_kontrol_yuzde": {
+   "deger": 43.5,
+   "kaynak": "PMID 39122964",
+   "okuma": "tam_metin",
+   "pay": "232/533"
+  },
+  "illingworth_canli_dogum_RD": {
+   "deger": {
+    "nokta": -3.9,
+    "alt": -9.9,
+    "ust": 2.2
+   },
+   "kaynak": "PMID 39122964",
+   "okuma": "tam_metin",
+   "birim": "yüzde puan",
+   "P": 0.24
+  },
+  "illingworth_sure_yz_sn": {
+   "deger": {
+    "ort": 21.3,
+    "sd": 18.1
+   },
+   "kaynak": "PMID 39122964",
+   "okuma": "tam_metin",
+   "not": "3 klinikte alt çalışma"
+  },
+  "illingworth_sure_morfoloji_sn": {
+   "deger": {
+    "ort": 208.3,
+    "sd": 144.7
+   },
+   "kaynak": "PMID 39122964",
+   "okuma": "tam_metin",
+   "P": "<0.001"
+  },
+  "illingworth_sure_kat": {
+   "deger": 9.78,
+   "kaynak": "PMID 39122964",
+   "okuma": "tam_metin",
+   "hesaplanmis": "208.3/21.3; makalede 'almost 10-fold'"
+  },
+  "illingworth_taze_kg_yz": {
+   "deger": 48.1,
+   "kaynak": "PMID 39122964",
+   "okuma": "tam_metin",
+   "pay": "154/320"
+  },
+  "illingworth_taze_kg_kontrol": {
+   "deger": 44.5,
+   "kaynak": "PMID 39122964",
+   "okuma": "tam_metin",
+   "pay": "157/353"
+  },
+  "illingworth_freezeall_kg_yz": {
+   "deger": 49.5,
+   "kaynak": "PMID 39122964",
+   "okuma": "tam_metin",
+   "pay": "94/190"
+  },
+  "illingworth_freezeall_kg_kontrol": {
+   "deger": 61.3,
+   "kaynak": "PMID 39122964",
+   "okuma": "tam_metin",
+   "pay": "100/163",
+   "uyari": "alt grup; makale hem 'prespecified interaction' hem 'post hoc' diyor"
+  },
+  "illingworth_freezeall_etkilesim_P": {
+   "deger": 0.022,
+   "kaynak": "PMID 39122964",
+   "okuma": "tam_metin",
+   "RR_taze": 1.08,
+   "RR_freezeall": 0.81
+  },
+  "illingworth_ayni_embriyo_yuzde": {
+   "deger": 65.8,
+   "kaynak": "PMID 39122964",
+   "okuma": "tam_metin",
+   "pay": "344/523"
+  },
+  "illingworth_erkek_orani": {
+   "deger": {
+    "yz": 53.5,
+    "kontrol": 58.6,
+    "P": 0.32
+   },
+   "kaynak": "PMID 39122964",
+   "okuma": "tam_metin"
+  },
+  "illingworth_NI_icin_gereken_n": {
+   "deger": 7800,
+   "kaynak": "PMID 39122964",
+   "okuma": "tam_metin",
+   "not": "yaklaşık"
+  },
+  "bhide_rkc_sayisi": {
+   "deger": 8,
+   "kaynak": "PMID 42955792",
+   "okuma": "ozet"
+  },
+  "bhide_n": {
+   "deger": 5642,
+   "kaynak": "PMID 42955792",
+   "okuma": "ozet"
+  },
+  "bhide_TLI_genel": {
+   "deger": {
+    "aOR": 0.97,
+    "alt": 0.81,
+    "ust": 1.15,
+    "ARD": -0.7,
+    "ARD_alt": -4.9,
+    "ARD_ust": 3.4,
+    "rkc": 4,
+    "n": 2913
+   },
+   "kaynak": "PMID 42955792",
+   "okuma": "ozet",
+   "kesinlik": "high-certainty (yazarlar)"
+  },
+  "bhide_kesintisiz_kultur": {
+   "deger": {
+    "aOR": 1.02,
+    "alt": 0.84,
+    "ust": 1.23,
+    "ARD": 0.5,
+    "ARD_alt": -4.1,
+    "ARD_ust": 5.0,
+    "rkc": 5,
+    "n": 2971
+   },
+   "kaynak": "PMID 42955792",
+   "okuma": "ozet"
+  },
+  "bhide_morfokinetik_secim": {
+   "deger": {
+    "aOR": 0.92,
+    "alt": 0.78,
+    "ust": 1.07,
+    "ARD": -2.0,
+    "ARD_alt": -5.7,
+    "ARD_ust": 1.6,
+    "rkc": 3,
+    "n": 2937
+   },
+   "kaynak": "PMID 42955792",
+   "okuma": "ozet"
+  },
+  "selectimo_n": {
+   "deger": 1731,
+   "kaynak": "PMID 37004670",
+   "okuma": "ozet"
+  },
+  "selectimo_12ay_kumulatif_devam_eden_gebelik": {
+   "deger": {
+    "TLE": 50.8,
+    "TLR": 50.9,
+    "CON": 49.4,
+    "P": 0.85
+   },
+   "kaynak": "PMID 37004670",
+   "okuma": "ozet"
+  },
+  "selectimo_12ay_kumulatif_canli_dogum": {
+   "deger": {
+    "TLE": 48.7,
+    "TLR": 48.4,
+    "CON": 48.2
+   },
+   "kaynak": "PMID 42130487",
+   "okuma": "ozet"
+  },
+  "selectimo_maliyet_farki_TLE_CON_eur": {
+   "deger": {
+    "nokta": 237,
+    "alt": -35,
+    "ust": 508
+   },
+   "kaynak": "PMID 42130487",
+   "okuma": "ozet"
+  },
+  "selectimo_maliyet_farki_TLR_CON_eur": {
+   "deger": {
+    "nokta": 55,
+    "alt": -203,
+    "ust": 313
+   },
+   "kaynak": "PMID 42130487",
+   "okuma": "ozet"
+  },
+  "selectimo_ICER_TLE_eur": {
+   "deger": 45950,
+   "kaynak": "PMID 42130487",
+   "okuma": "ozet",
+   "not": "ek bir canlı doğum başına"
+  },
+  "selectimo_ICER_TLR_eur": {
+   "deger": 26905,
+   "kaynak": "PMID 42130487",
+   "okuma": "ozet"
+  },
+  "selectimo_perinatal_tekil_dogum": {
+   "deger": 827,
+   "kaynak": "PMID 41139424",
+   "okuma": "ozet"
+  },
+  "selectimo_perinatal_ciddi_komplikasyon_RRadj": {
+   "deger": {
+    "TLE_CON": [
+     0.95,
+     0.65,
+     1.4
+    ],
+    "TLR_CON": [
+     1.03,
+     0.7,
+     1.5
+    ]
+   },
+   "kaynak": "PMID 41139424",
+   "okuma": "ozet"
+  },
+  "selectimo_perinatal_dogum_agirligi_MD_g": {
+   "deger": {
+    "TLE_CON": [
+     34,
+     -62,
+     129
+    ]
+   },
+   "kaynak": "PMID 41139424",
+   "okuma": "ozet"
+  },
+  "yaghi_klinik_gebelik_RR": {
+   "deger": {
+    "nokta": 0.99,
+    "alt": 0.87,
+    "ust": 1.12,
+    "havuzlanan_calisma": 2,
+    "toplam_calisma": 10
+   },
+   "kaynak": "PMID 42914619",
+   "okuma": "ozet"
+  },
+  "eshre_oneri_sayisi": {
+   "deger": 42,
+   "kaynak": "PMID 37747409",
+   "okuma": "ozet",
+   "not": "hiçbiri yüksek kaliteli kanıta dayanmıyor; 4'ü orta"
+  },
+  "bormann_alfa": {
+   "deger": {
+    "embriyolog": 0.6,
+    "ag": 1.0
+   },
+   "kaynak": "PMID 32228880",
+   "okuma": "ozet"
+  },
+  "bormann_tutarlilik_yuzde": {
+   "deger": {
+    "ag": 83.92,
+    "embriyolog_biyopsi": 52.14,
+    "embriyolog_kriyo": 57.68
+   },
+   "kaynak": "PMID 32228880",
+   "okuma": "ozet"
+  },
+  "zaninovic_kendall_tau": {
+   "deger": {
+    "embriyolog_arasi": 0.7,
+    "embriyolog_arasi_tek_goruntu_video": 0.78,
+    "embriyolog_YZ": 0.53,
+    "YZ_YZ": 0.47
+   },
+   "kaynak": "PMID 37820865",
+   "okuma": "ozet"
+  },
+  "thirumalaraju_kendall_W": {
+   "deger": 0.35,
+   "kaynak": "PMID 40876725",
+   "okuma": "ozet",
+   "not": "yaklaşık; 50 kopya CNN; kritik hata ~%15; AUC ~0.60"
+  },
+  "kim_uyum_kidemsiz": {
+   "deger": {
+    "once": 0.355,
+    "sonra": 0.527
+   },
+   "kaynak": "PMID 38830209",
+   "okuma": "ozet",
+   "tasarim": "simülasyon anketi, 61 embriyolog"
+  },
+  "kim_uyum_kidemli": {
+   "deger": {
+    "once": 0.44,
+    "sonra": 0.524
+   },
+   "kaynak": "PMID 38830209",
+   "okuma": "ozet"
+  },
+  "fordham_kappa_embriyologlar": {
+   "deger": 0.56,
+   "kaynak": "PMID 35944167",
+   "okuma": "ozet"
+  },
+  "toschi_kappa_embriyologlar": {
+   "deger": {
+    "BE": 0.4,
+    "TE_ICM": 0.3,
+    "YZ_BE_ICM": 0.7,
+    "YZ_TE": 0.4
+   },
+   "kaynak": "PMID 39564830",
+   "okuma": "ozet"
+  },
+  "kakulavarapu_evre_uyumu": {
+   "deger": {
+    "embriyologlar": [
+     0.778,
+     0.952
+    ],
+    "DL": [
+     0.385,
+     0.681
+    ]
+   },
+   "kaynak": "PMID 41928854",
+   "okuma": "ozet"
+  },
+  "harir_uyum_yuzde": {
+   "deger": 64.6,
+   "kaynak": "PMID 40751026",
+   "okuma": "ozet"
+  },
+  "dissler_siklus_gebelige": {
+   "deger": {
+    "embriyolog": 2.01,
+    "YZ_ile_olabilirdi": 1.66
+   },
+   "kaynak": "PMID 38701632",
+   "okuma": "ozet",
+   "uyari": "retrospektif simülasyon; slayta konmadı"
+  },
+  "bixby_toplam_FSH_IU": {
+   "deger": {
+    "kontrol": 4654.71,
+    "YZ": 4181.77,
+    "P": "<.01"
+   },
+   "kaynak": "PMID 40620368",
+   "okuma": "tam_metin"
+  },
+  "bixby_baslangic_FSH_IU": {
+   "deger": {
+    "kontrol": 443.84,
+    "YZ": 397.09,
+    "P": "<.01"
+   },
+   "kaynak": "PMID 40620368",
+   "okuma": "tam_metin"
+  },
+  "bixby_MII": {
+   "deger": {
+    "kontrol": 11.25,
+    "YZ": 11.17,
+    "P": 0.9
+   },
+   "kaynak": "PMID 40620368",
+   "okuma": "tam_metin"
+  },
+  "bixby_n": {
+   "deger": {
+    "YZ": 292,
+    "tarihsel_kontrol": 292
+   },
+   "kaynak": "PMID 40620368",
+   "okuma": "tam_metin"
+  },
+  "bixby_toplam_FSH_azalma_yuzde": {
+   "deger": 10.16,
+   "kaynak": "PMID 40620368",
+   "okuma": "tam_metin",
+   "hesaplanmis": "(4654.71-4181.77)/4654.71"
+  },
+  "canon_toplam_FSH_fark_IU": {
+   "deger": {
+    "fark": -174.35,
+    "P": 0.13,
+    "YZ": 3671.95,
+    "kontrol": 3846.29
+   },
+   "kaynak": "PMID 39164339",
+   "okuma": "ozet"
+  },
+  "canon_MII": {
+   "deger": {
+    "YZ": 12.2,
+    "kontrol": 11.24,
+    "P": 0.16
+   },
+   "kaynak": "PMID 39164339",
+   "okuma": "ozet"
+  },
+  "canon_n": {
+   "deger": 291,
+   "kaynak": "PMID 39164339",
+   "okuma": "ozet"
+  },
+  "idoser_planlanan_n": {
+   "deger": 236,
+   "kaynak": "PMID 38212837",
+   "okuma": "ozet",
+   "not": "protokol; sonuç yayımlanmamış"
+  },
+  "lu_scoping": {
+   "deger": {
+    "calisma": 5,
+    "n": 16441,
+    "FSH_azalma_IU": 195,
+    "MII_artis": 1.5
+   },
+   "kaynak": "PMID 42876358",
+   "okuma": "ozet"
+  },
+  "montjean_SiD_oosit": {
+   "deger": {
+    "toplam": 646,
+    "ICSI": 320,
+    "ICSI_SiD": 326
+   },
+   "kaynak": "PMID 38651413",
+   "okuma": "ozet"
+  },
+  "chavez_dollenme": {
+   "deger": {
+    "otomatik": 64.3,
+    "manuel": 81,
+    "olgu": 11,
+    "canli_dogum": 5
+   },
+   "kaynak": "PMID 41453368",
+   "okuma": "ozet"
+  },
+  "cromack_n": {
+   "deger": 200,
+   "kaynak": "PMID 39776390",
+   "okuma": "ozet"
+  },
+  "cromack_guven_yuzde": {
+   "deger": 46,
+   "kaynak": "PMID 39776390",
+   "okuma": "ozet"
+  },
+  "cromack_YZ_tercihi_yuzde": {
+   "deger": {
+    "gamet": 22,
+    "embriyo": 14.5,
+    "gonadotropin_dozu": 6.5,
+    "stimulasyon_suresi": 7.0
+   },
+   "kaynak": "PMID 39776390",
+   "okuma": "ozet"
+  },
+  "du_sirket_sayisi": {
+   "deger": 21,
+   "kaynak": "PMID 42923733",
+   "okuma": "ozet"
+  },
+  "du_risk_yazan": {
+   "deger": 0,
+   "kaynak": "PMID 42923733",
+   "okuma": "ozet"
+  },
+  "du_orneklem_aciklayan": {
+   "deger": {
+    "sayi": 7,
+    "yuzde": 33.3
+   },
+   "kaynak": "PMID 42923733",
+   "okuma": "ozet"
+  },
+  "chervenak_hatali": {
+   "deger": {
+    "hatali": 9,
+    "toplam": 147,
+    "yuzde": 6.12
+   },
+   "kaynak": "PMID 37217092",
+   "okuma": "ozet"
+  },
+  "palmer_embriyolog": {
+   "deger": 702,
+   "kaynak": "PMID 39939196",
+   "okuma": "ozet"
+  },
+  "kieslinger2024_yorum_cumle": {
+   "deger": "the inflated expectations of new technologies are not always justified",
+   "kaynak": "PMID 39354198",
+   "okuma": "web",
+   "not": "yalnız giriş cümlesi"
+  },
+  "_grafik_verisi": {
+   "orman_ARD": {
+    "eksen": "Canlı doğum mutlak risk farkı (yüzde puan), müdahale − standart",
+    "eksen_aralik": [
+     -12,
+     8
+    ],
+    "satirlar": [
+     {
+      "grup": "TLI / morfokinetik (derin öğrenme değil)",
+      "etiket": "TLI genel · 4 RKÇ · n=2 913",
+      "nokta": -0.7,
+      "alt": -4.9,
+      "ust": 3.4,
+      "sonlanim": "canlı doğum",
+      "kaynak": "PMID 42955792",
+      "okuma": "ozet"
+     },
+     {
+      "grup": "TLI / morfokinetik (derin öğrenme değil)",
+      "etiket": "Kesintisiz kültür · 5 RKÇ · n=2 971",
+      "nokta": 0.5,
+      "alt": -4.1,
+      "ust": 5.0,
+      "sonlanim": "canlı doğum",
+      "kaynak": "PMID 42955792",
+      "okuma": "ozet"
+     },
+     {
+      "grup": "TLI / morfokinetik (derin öğrenme değil)",
+      "etiket": "Morfokinetik seçim · 3 RKÇ · n=2 937",
+      "nokta": -2.0,
+      "alt": -5.7,
+      "ust": 1.6,
+      "sonlanim": "canlı doğum",
+      "kaynak": "PMID 42955792",
+      "okuma": "ozet"
+     },
+     {
+      "grup": "Derin öğrenme (iDAScore)",
+      "etiket": "Canlı doğum · 1 RKÇ · n=1 066",
+      "nokta": -3.9,
+      "alt": -9.9,
+      "ust": 2.2,
+      "sonlanim": "canlı doğum (ikincil)",
+      "kaynak": "PMID 39122964",
+      "okuma": "tam_metin"
+     },
+     {
+      "grup": "Derin öğrenme (iDAScore)",
+      "etiket": "Klinik gebelik (birincil) · 1 RKÇ · n=1 066",
+      "nokta": -1.7,
+      "alt": -7.7,
+      "ust": 4.3,
+      "sonlanim": "klinik gebelik",
+      "ni_siniri": -5,
+      "kaynak": "PMID 39122964",
+      "okuma": "tam_metin"
+     }
+    ]
+   },
+   "orman_oran": {
+    "eksen": "Oran (log ölçek); 1 = fark yok",
+    "satirlar": [
+     {
+      "etiket": "TLI genel (aOR, canlı doğum)",
+      "nokta": 0.97,
+      "alt": 0.81,
+      "ust": 1.15,
+      "kaynak": "PMID 42955792",
+      "okuma": "ozet"
+     },
+     {
+      "etiket": "Kesintisiz kültür (aOR, canlı doğum)",
+      "nokta": 1.02,
+      "alt": 0.84,
+      "ust": 1.23,
+      "kaynak": "PMID 42955792",
+      "okuma": "ozet"
+     },
+     {
+      "etiket": "Morfokinetik seçim (aOR, canlı doğum)",
+      "nokta": 0.92,
+      "alt": 0.78,
+      "ust": 1.07,
+      "kaynak": "PMID 42955792",
+      "okuma": "ozet"
+     },
+     {
+      "etiket": "iDAScore (RR, klinik gebelik)",
+      "nokta": 0.96,
+      "alt": 0.85,
+      "ust": 1.1,
+      "kaynak": "PMID 39122964",
+      "okuma": "tam_metin"
+     },
+     {
+      "etiket": "YZ vs morfoloji MA (RR, klinik gebelik; 2 çalışma)",
+      "nokta": 0.99,
+      "alt": 0.87,
+      "ust": 1.12,
+      "kaynak": "PMID 42914619",
+      "okuma": "ozet"
+     }
+    ]
+   },
+   "freezeall_ic_grafik": {
+    "taze": {
+     "YZ": 48.1,
+     "kontrol": 44.5
+    },
+    "freeze_all": {
+     "YZ": 49.5,
+     "kontrol": 61.3
+    },
+    "kaynak": "PMID 39122964",
+    "okuma": "tam_metin",
+    "etiket": "alt grup analizi — dikkatle"
+   },
+   "sure_cubugu": {
+    "birim": "saniye (hasta başına)",
+    "embriyolog": {
+     "ort": 208.3,
+     "sd": 144.7
+    },
+    "algoritma": {
+     "ort": 21.3,
+     "sd": 18.1
+    },
+    "kaynak": "PMID 39122964",
+    "okuma": "tam_metin"
+   },
+   "pano": [
+    {
+     "cikti": "Canlı doğum, gebelik, düşük",
+     "etki": "= fark yok",
+     "renk": "gri",
+     "kanit": "IPD-MA · RKÇ",
+     "kanit_gucu": "dolu",
+     "kaynak": "PMID 42955792; PMID 39122964"
+    },
+    {
+     "cikti": "Perinatal güvenlik",
+     "etki": "= fark yok",
+     "renk": "gri",
+     "kanit": "RKÇ takibi",
+     "kanit_gucu": "yari",
+     "kaynak": "PMID 41139424"
+    },
+    {
+     "cikti": "Gebeliğe kadar süre",
+     "etki": "ölçülmedi",
+     "renk": "bos",
+     "kanit": "—",
+     "kanit_gucu": "yok",
+     "kaynak": "PMID 39122964; PMID 42914619"
+    },
+    {
+     "cikti": "Değerlendirme süresi",
+     "etki": "↓ ~10 kat",
+     "renk": "yesil",
+     "kanit": "RKÇ alt çalışması",
+     "kanit_gucu": "dolu",
+     "kaynak": "PMID 39122964"
+    },
+    {
+     "cikti": "Tutarlılık",
+     "etki": "karışık",
+     "renk": "turuncu",
+     "kanit": "retrospektif",
+     "kanit_gucu": "bos_cerceve",
+     "kaynak": "PMID 32228880; PMID 37820865; PMID 40876725"
+    },
+    {
+     "cikti": "FSH miktarı",
+     "etki": "↓ ~%10",
+     "renk": "turuncu",
+     "kanit": "tarihsel kontrol",
+     "kanit_gucu": "bos_cerceve",
+     "kaynak": "PMID 40620368"
+    },
+    {
+     "cikti": "Maliyet",
+     "etki": "↑",
+     "renk": "kirmizi",
+     "kanit": "ekonomik analiz",
+     "kanit_gucu": "yari",
+     "kaynak": "PMID 42130487"
+    },
+    {
+     "cikti": "Hasta güveni",
+     "etki": "%46",
+     "renk": "turuncu",
+     "kanit": "anket",
+     "kanit_gucu": "bos_cerceve",
+     "kaynak": "PMID 39776390"
+    },
+    {
+     "cikti": "Beceri kaybı, sorumluluk",
+     "etki": "ölçülmedi",
+     "renk": "bos",
+     "kanit": "etik yazın",
+     "kanit_gucu": "bos_cerceve",
+     "kaynak": "PMID 39657965; PMID 34938903; PMID 42303882"
+    }
+   ]
+  }
+ },
+ "bolum4": {
+  "_not": "Bölüm 4 (doğruluk). Her sayı 14 Kasım 2026'da PubMed kaydında görüldü. okuma: ozet | tam_metin | sentetik. Oranlar 0-1 ölçeğinde (AUC) ya da yüzde olarak belirtildi.",
+  "berntsen_kid": {
+   "deger": 0.67,
+   "ga": [
+    0.64,
+    0.69
+   ],
+   "aciklama": "iDAScore, transfer edilen KID embriyolarda FH AUC",
+   "kaynak": "PMID 35108306",
+   "doi": "10.1371/journal.pone.0262661",
+   "okuma": "tam_metin"
+  },
+  "berntsen_tum": {
+   "deger": 0.95,
+   "ga": [
+    0.95,
+    0.96
+   ],
+   "aciklama": "Tüm embriyolar; atılanlar FH− sayıldı",
+   "kaynak": "PMID 35108306",
+   "doi": "10.1371/journal.pone.0262661",
+   "okuma": "tam_metin"
+  },
+  "berntsen_test_embriyo": {
+   "deger": 17249,
+   "kaynak": "PMID 35108306",
+   "okuma": "tam_metin"
+  },
+  "berntsen_test_kid": {
+   "deger": 2212,
+   "kaynak": "PMID 35108306",
+   "okuma": "tam_metin"
+  },
+  "berntsen_toplam_embriyo": {
+   "deger": 115832,
+   "kaynak": "PMID 35108306",
+   "okuma": "ozet"
+  },
+  "berntsen_merkez": {
+   "deger": 18,
+   "kaynak": "PMID 35108306",
+   "okuma": "ozet"
+  },
+  "berntsen_klinik_alt": {
+   "deger": 0.6,
+   "kaynak": "PMID 35108306",
+   "okuma": "ozet"
+  },
+  "berntsen_klinik_ust": {
+   "deger": 0.75,
+   "kaynak": "PMID 35108306",
+   "okuma": "ozet"
+  },
+  "berntsen_klinik_listesi": {
+   "deger": [
+    0.63,
+    0.66,
+    0.65,
+    0.6,
+    0.75,
+    0.72,
+    0.67,
+    0.66,
+    0.65,
+    0.65,
+    0.68,
+    0.68
+   ],
+   "aciklama": "Merkez 1-12, dışarıda bırakma testi (Tablo 4)",
+   "kaynak": "PMID 35108306",
+   "okuma": "tam_metin"
+  },
+  "kragh_sim_genel": {
+   "deger": 0.76,
+   "aciklama": "Simülasyon: iki eşit model, tüm havuz",
+   "kaynak": "PMID 34173914",
+   "doi": "10.1007/s10815-021-02254-6",
+   "okuma": "tam_metin"
+  },
+  "kragh_sim_model1": {
+   "deger": 0.59,
+   "aciklama": "Seçimi yapan model, kendi seçtiği transferlerde",
+   "kaynak": "PMID 34173914",
+   "okuma": "tam_metin"
+  },
+  "kragh_sim_model2": {
+   "deger": 0.74,
+   "aciklama": "Diğer model, aynı alt kümede",
+   "kaynak": "PMID 34173914",
+   "okuma": "tam_metin"
+  },
+  "ueno_auc_min": {
+   "deger": 0.66,
+   "aciklama": "iDAScore FHB AUC yaş grupları en düşük",
+   "kaynak": "PMID 34246469",
+   "doi": "10.1016/j.fertnstert.2021.06.001",
+   "okuma": "ozet"
+  },
+  "ueno_auc_max": {
+   "deger": 0.76,
+   "aciklama": ">42 yaş grubu",
+   "kaynak": "PMID 34246469",
+   "okuma": "ozet"
+  },
+  "ueno_genc_idascore": {
+   "deger": 0.72,
+   "kaynak": "PMID 34246469",
+   "okuma": "ozet"
+  },
+  "ueno_genc_kidscore": {
+   "deger": 0.66,
+   "kaynak": "PMID 34246469",
+   "okuma": "ozet"
+  },
+  "ueno_genc_gardner": {
+   "deger": 0.64,
+   "kaynak": "PMID 34246469",
+   "okuma": "ozet"
+  },
+  "ueno_gardner_aralik": {
+   "deger": [
+    0.63,
+    0.75
+   ],
+   "kaynak": "PMID 34246469",
+   "okuma": "ozet"
+  },
+  "mina_auc": {
+   "deger": 0.7,
+   "aciklama": "Meta-analiz, implantasyon; duyarlılık 0.69, özgüllük 0.62",
+   "kaynak": "PMID 41016945",
+   "doi": "10.1186/s40834-025-00400-4",
+   "okuma": "ozet"
+  },
+  "mina_duyarlilik": {
+   "deger": 0.69,
+   "kaynak": "PMID 41016945",
+   "okuma": "ozet"
+  },
+  "mina_ozgulluk": {
+   "deger": 0.62,
+   "kaynak": "PMID 41016945",
+   "okuma": "ozet"
+  },
+  "thirumalaraju_auc": {
+   "deger": 0.6,
+   "yaklasik": true,
+   "kaynak": "PMID 40876725",
+   "doi": "10.1016/j.fertnstert.2025.08.021",
+   "okuma": "ozet"
+  },
+  "thirumalaraju_kopya": {
+   "deger": 50,
+   "kaynak": "PMID 40876725",
+   "okuma": "ozet"
+  },
+  "thirumalaraju_w": {
+   "deger": 0.35,
+   "yaklasik": true,
+   "kaynak": "PMID 40876725",
+   "okuma": "ozet"
+  },
+  "thirumalaraju_kritik": {
+   "deger": 15,
+   "birim": "%",
+   "yaklasik": true,
+   "kaynak": "PMID 40876725",
+   "okuma": "ozet"
+  },
+  "thirumalaraju_varyans_delta": {
+   "deger": 46.07,
+   "birim": "%",
+   "kaynak": "PMID 40876725",
+   "okuma": "ozet"
+  },
+  "cimadomo26_yz_v2": {
+   "deger": 68,
+   "birim": "% siklus, euploid ilk sırada",
+   "kaynak": "PMID 42546812",
+   "doi": "10.1016/j.fertnstert.2026.07.025",
+   "okuma": "ozet"
+  },
+  "cimadomo26_yz_v1": {
+   "deger": 62,
+   "birim": "%",
+   "kaynak": "PMID 42546812",
+   "okuma": "ozet"
+  },
+  "cimadomo26_morfodinamik": {
+   "deger": 64,
+   "birim": "%",
+   "kaynak": "PMID 42546812",
+   "okuma": "ozet"
+  },
+  "cimadomo26_gardner": {
+   "deger": 58,
+   "birim": "%",
+   "kaynak": "PMID 42546812",
+   "okuma": "ozet"
+  },
+  "cimadomo26_rastgele": {
+   "deger": 44,
+   "birim": "%",
+   "kaynak": "PMID 42546812",
+   "okuma": "ozet"
+  },
+  "barnes_test": {
+   "deger": 0.737,
+   "kaynak": "PMID 36543475",
+   "doi": "10.1016/S2589-7500(22)00213-8",
+   "okuma": "ozet"
+  },
+  "barnes_dis1": {
+   "deger": 0.702,
+   "aciklama": "WCM-ES+ dış set",
+   "kaynak": "PMID 36543475",
+   "okuma": "ozet"
+  },
+  "barnes_dis2": {
+   "deger": 0.715,
+   "aciklama": "IVI Valencia dış set",
+   "kaynak": "PMID 36543475",
+   "okuma": "ozet"
+  },
+  "bamford_lr": {
+   "deger": 0.71,
+   "ga": [
+    0.67,
+    0.73
+   ],
+   "kaynak": "PMID 36825452",
+   "doi": "10.1093/humrep/dead034",
+   "okuma": "ozet"
+  },
+  "bamford_rf": {
+   "deger": 0.68,
+   "kaynak": "PMID 36825452",
+   "okuma": "ozet"
+  },
+  "bamford_xgb": {
+   "deger": 0.63,
+   "kaynak": "PMID 36825452",
+   "okuma": "ozet"
+  },
+  "bamford_derin": {
+   "deger": 0.63,
+   "kaynak": "PMID 36825452",
+   "okuma": "ozet"
+  },
+  "bamford_yalniz_derece": {
+   "deger": 0.52,
+   "kaynak": "PMID 36825452",
+   "okuma": "ozet"
+  },
+  "ma_idascore_tek": {
+   "deger": 0.612,
+   "kaynak": "PMID 38778410",
+   "doi": "10.1186/s12958-024-01230-w",
+   "okuma": "ozet"
+  },
+  "ma_idascore_klinik": {
+   "deger": 0.688,
+   "kaynak": "PMID 38778410",
+   "okuma": "ozet"
+  },
+  "selntigia_aralik": {
+   "deger": [
+    0.6,
+    0.68
+   ],
+   "kaynak": "PMID 40870029",
+   "doi": "10.3390/genes16080981",
+   "okuma": "ozet"
+  },
+  "xin_auc": {
+   "deger": 0.8,
+   "ga": [
+    0.76,
+    0.83
+   ],
+   "kaynak": "PMID 39513188",
+   "doi": "10.1016/j.eclinm.2024.102897",
+   "okuma": "ozet"
+  },
+  "xin_duyarlilik": {
+   "deger": 0.71,
+   "kaynak": "PMID 39513188",
+   "okuma": "ozet"
+  },
+  "xin_ozgulluk": {
+   "deger": 0.75,
+   "kaynak": "PMID 39513188",
+   "okuma": "ozet"
+  },
+  "xin_calisma": {
+   "deger": 12,
+   "kaynak": "PMID 39513188",
+   "okuma": "ozet"
+  },
+  "huang_nipgt_auc": {
+   "deger": 0.91,
+   "ga": [
+    0.88,
+    0.93
+   ],
+   "uyari": "niPGT, YZ değil",
+   "kaynak": "PMID 36952146",
+   "doi": "10.1007/s10815-023-02760-9",
+   "okuma": "ozet"
+  },
+  "huang_duyarlilik": {
+   "deger": 0.84,
+   "kaynak": "PMID 36952146",
+   "okuma": "ozet"
+  },
+  "huang_ozgulluk": {
+   "deger": 0.85,
+   "kaynak": "PMID 36952146",
+   "okuma": "ozet"
+  },
+  "walsh_dogruluk": {
+   "deger": 91,
+   "birim": "%",
+   "kaynak": "PMID 42759383",
+   "doi": "10.1016/j.rbmo.2026.105892",
+   "okuma": "ozet"
+  },
+  "walsh_ornek": {
+   "deger": 120,
+   "kaynak": "PMID 42759383",
+   "okuma": "ozet"
+  },
+  "magenta_tek": {
+   "deger": 0.542,
+   "ga": [
+    0.505,
+    0.579
+   ],
+   "kaynak": "PMID 41825691",
+   "doi": "10.1016/j.xfss.2026.03.002",
+   "okuma": "ozet"
+  },
+  "magenta_robust": {
+   "deger": 0.607,
+   "ga": [
+    0.573,
+    0.641
+   ],
+   "kaynak": "PMID 41825691",
+   "okuma": "ozet"
+  },
+  "magenta_tam": {
+   "deger": 0.666,
+   "ga": [
+    0.632,
+    0.7
+   ],
+   "kaynak": "PMID 41825691",
+   "okuma": "ozet"
+  },
+  "magenta_egim_tek": {
+   "deger": 0.259,
+   "kaynak": "PMID 41825691",
+   "okuma": "ozet"
+  },
+  "magenta_egim_tam": {
+   "deger": 0.645,
+   "kaynak": "PMID 41825691",
+   "okuma": "ozet"
+  },
+  "magenta_donor_blast": {
+   "deger": 0.6,
+   "kaynak": "PMID 40759152",
+   "doi": "10.1093/humrep/deaf153",
+   "okuma": "ozet"
+  },
+  "magenta_donor_cldr": {
+   "deger": 0.691,
+   "kaynak": "PMID 40759152",
+   "okuma": "ozet"
+  },
+  "wilkinson_model": {
+   "deger": 9,
+   "kaynak": "PMID 41780078",
+   "doi": "10.1016/j.rbmo.2025.105362",
+   "okuma": "ozet"
+  },
+  "wilkinson_dis": {
+   "deger": 0,
+   "aciklama": "Dış doğrulanan çalışma sayısı",
+   "kaynak": "PMID 41780078",
+   "okuma": "ozet"
+  },
+  "wilkinson_mae": {
+   "deger": [
+    0.62,
+    4.13
+   ],
+   "kaynak": "PMID 41780078",
+   "okuma": "ozet"
+  },
+  "follis_f1_10mm": {
+   "deger": 93.3,
+   "birim": "%",
+   "kaynak": "PMID 41485151",
+   "doi": "10.1007/s10815-025-03777-y",
+   "okuma": "ozet"
+  },
+  "follis_ga": {
+   "deger": [
+    90.7,
+    95.1
+   ],
+   "birim": "%",
+   "kaynak": "PMID 41485151",
+   "okuma": "ozet"
+  },
+  "follis_kesinlik_10mm": {
+   "deger": 98.2,
+   "birim": "%",
+   "kaynak": "PMID 41485151",
+   "okuma": "ozet"
+  },
+  "follis_recall_10mm": {
+   "deger": 88.9,
+   "birim": "%",
+   "kaynak": "PMID 41485151",
+   "okuma": "ozet"
+  },
+  "follis_recall_tum": {
+   "deger": 68.9,
+   "birim": "%",
+   "kaynak": "PMID 41485151",
+   "okuma": "ozet"
+  },
+  "follis_tarama": {
+   "deger": 5508,
+   "kaynak": "PMID 41485151",
+   "okuma": "ozet"
+  },
+  "sperm_sr_calisma": {
+   "deger": 56,
+   "kaynak": "PMID 43002852",
+   "doi": "10.1016/j.ijmedinf.2026.106766",
+   "okuma": "ozet"
+  },
+  "sperm_sr_morf_oran": {
+   "deger": 71,
+   "birim": "% çalışma morfoloji",
+   "kaynak": "PMID 43002852",
+   "okuma": "ozet"
+  },
+  "sperm_sr_dogruluk": {
+   "deger": ">90",
+   "birim": "% (sözel: sıklıkla)",
+   "kaynak": "PMID 43002852",
+   "okuma": "ozet"
+  },
+  "sid_oosit": {
+   "deger": 646,
+   "kaynak": "PMID 38651413",
+   "doi": "10.3390/medsci12020019",
+   "okuma": "ozet"
+  },
+  "salih_yz_morfoloji": {
+   "deger": 75.5,
+   "birim": "%",
+   "kaynak": "PMID 37588797",
+   "doi": "10.1093/hropen/hoad031",
+   "okuma": "ozet"
+  },
+  "salih_embriyolog_morfoloji": {
+   "deger": 65.4,
+   "birim": "%",
+   "kaynak": "PMID 37588797",
+   "okuma": "ozet"
+  },
+  "berman_calisma": {
+   "deger": 22,
+   "kaynak": "PMID 37116822",
+   "doi": "10.1016/j.ajog.2023.04.027",
+   "okuma": "ozet"
+  },
+  "berman_yuksek_risk": {
+   "deger": 10,
+   "kaynak": "PMID 37116822",
+   "okuma": "ozet"
+  },
+  "cai_dis_min": {
+   "deger": 0.67,
+   "kaynak": "PMID 37995380",
+   "doi": "10.1093/humrep/dead242",
+   "okuma": "ozet"
+  },
+  "cai_dis_max": {
+   "deger": 0.69,
+   "kaynak": "PMID 37995380",
+   "okuma": "ozet"
+  },
+  "cai_merkez": {
+   "deger": 0.71,
+   "ga": [
+    0.71,
+    0.72
+   ],
+   "kaynak": "PMID 37995380",
+   "okuma": "ozet"
+  },
+  "ratna_on": {
+   "deger": 0.67,
+   "ga": [
+    0.66,
+    0.68
+   ],
+   "kaynak": "PMID 37632223",
+   "doi": "10.1093/humrep/dead165",
+   "okuma": "ozet"
+  },
+  "ratna_sonra": {
+   "deger": 0.75,
+   "ga": [
+    0.74,
+    0.76
+   ],
+   "kaynak": "PMID 37632223",
+   "okuma": "ozet"
+  },
+  "ratna22_egim": {
+   "deger": 0.85,
+   "ga": [
+    0.81,
+    0.88
+   ],
+   "kaynak": "PMID 35866894",
+   "doi": "10.1093/humrep/deac152",
+   "okuma": "ozet"
+  },
+  "demo_gbm_rastgele": {
+   "deger": 0.686,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_slayt/sonuclar.json",
+   "okuma": "sentetik"
+  },
+  "demo_gbm_hasta": {
+   "deger": 0.646,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_slayt/sonuclar.json",
+   "okuma": "sentetik"
+  },
+  "demo_gbm_hasta_ga": {
+   "deger": [
+    0.629,
+    0.66
+   ],
+   "kaynak": "/home/claude/sunum/analiz/sonuc_slayt/sonuclar.json",
+   "okuma": "sentetik"
+  },
+  "demo_lr_rastgele": {
+   "deger": 0.706,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_slayt/sonuclar.json",
+   "okuma": "sentetik"
+  },
+  "demo_lr_hasta": {
+   "deger": 0.704,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_slayt/sonuclar.json",
+   "okuma": "sentetik"
+  }
+ },
+ "bolum5": {
+  "_not": "Bölüm 5 sayıları. okuma: depo = Patient-Data-Center deposundan bu oturumda okundu/sayıldı; sentetik = sentetik demo JSON'u; ozet/tam_metin = PubMed. Sentetik sayılar klinik bulgu değildir.",
+  "depo_commit": {
+   "deger": 341,
+   "kaynak": "git rev-list --count HEAD (Patient-Data-Center, 14 Kasım 2026)",
+   "okuma": "depo"
+  },
+  "depo_gun": {
+   "deger": 32,
+   "kaynak": "git log: ilk commit 2026-09-08, son 2026-10-09 (takvim günü, uçlar dahil)",
+   "okuma": "depo"
+  },
+  "depo_commit_gunu": {
+   "deger": 26,
+   "kaynak": "git log --date=short | sort -u",
+   "okuma": "depo"
+  },
+  "depo_surum_notu": {
+   "deger": 296,
+   "kaynak": "README.md '^# v' başlıkları (34 git öncesi v0.1–v5.8, 262 v6.1–v6.266)",
+   "okuma": "depo"
+  },
+  "depo_surum_notu_git_oncesi": {
+   "deger": 34,
+   "kaynak": "README.md satır 1452'den önceki '^# v' başlıkları",
+   "okuma": "depo"
+  },
+  "depo_son_surum": {
+   "deger": "v6.266",
+   "kaynak": "README.md satır 20585",
+   "okuma": "depo"
+  },
+  "depo_claude_ortak": {
+   "deger": 341,
+   "kaynak": "341 commit mesajının 341'inde 'Co-Authored-By: Claude' satırı",
+   "okuma": "depo"
+  },
+  "depo_yazar_claude": {
+   "deger": 330,
+   "kaynak": "git log --format=%an: 330 Claude, 11 kullanıcı",
+   "okuma": "depo"
+  },
+  "depo_goc": {
+   "deger": 61,
+   "kaynak": "goc.py + goc_0XX.py dosya sayısı",
+   "okuma": "depo"
+  },
+  "depo_app_satir": {
+   "deger": 14214,
+   "kaynak": "wc -l app.py",
+   "okuma": "depo"
+  },
+  "depo_claude_md_satir": {
+   "deger": 5212,
+   "kaynak": "wc -l CLAUDE.md",
+   "okuma": "depo"
+  },
+  "pdc_oran_sayisi": {
+   "deger": 5,
+   "kaynak": "disari.py 1095–1100 (oran_mii, oran_fert, oran_blast, oran_gebelik, oran_beta); templates/istatistik.html 93–118",
+   "okuma": "depo"
+  },
+  "pdc_beta_esik": {
+   "deger": 10,
+   "kaynak": "db.py 997 BETA_POZITIF_ESIK; README v6.241 satır 19051",
+   "okuma": "depo",
+   "birim": "mIU/mL"
+  },
+  "pdc_yedek_uyari_gun": {
+   "deger": 3,
+   "kaynak": "README v1.2 satır 517",
+   "okuma": "depo",
+   "birim": "gün"
+  },
+  "pdc_test_m2": {
+   "deger": {
+    "pay": 20,
+    "payda": 32,
+    "yuzde": 62.5
+   },
+   "kaynak": "README v6.123 satır 9579 (TEST VERİSİ)",
+   "okuma": "depo"
+  },
+  "pdc_test_pn": {
+   "deger": {
+    "pay": 12,
+    "payda": 20,
+    "yuzde": 60.0
+   },
+   "kaynak": "README v6.123 satır 9579–9580 (TEST VERİSİ)",
+   "okuma": "depo"
+  },
+  "pdc_test_blast": {
+   "deger": {
+    "pay": 4,
+    "payda": 12,
+    "yuzde": 33.3
+   },
+   "kaynak": "README v6.123 satır 9580 (TEST VERİSİ)",
+   "okuma": "depo"
+  },
+  "pdc_test_gebelik": {
+   "deger": {
+    "pay": 1,
+    "payda": 3,
+    "yuzde": 33.3
+   },
+   "kaynak": "README v6.123 satır 9580–9581 (TEST VERİSİ)",
+   "okuma": "depo"
+  },
+  "vienna_gosterge": {
+   "deger": {
+    "toplam": 19,
+    "KPI": 12,
+    "PI": 5,
+    "RI": 2
+   },
+   "kaynak": "PMID 28784335",
+   "okuma": "ozet"
+  },
+  "vienna_icsi_fert": {
+   "deger": {
+    "competence_min_yuzde": 65,
+    "benchmark_min_yuzde": 80
+   },
+   "kaynak": "PMID 31486806 (PMC6276649)",
+   "okuma": "tam_metin"
+  },
+  "vienna_blast": {
+   "deger": {
+    "competency_min_yuzde": 40,
+    "benchmark_min_yuzde": 60,
+    "gun": 5
+   },
+   "kaynak": "PMID 31486806 (PMC6276649)",
+   "okuma": "tam_metin"
+  },
+  "vienna_mii": {
+   "deger": {
+    "alt_yuzde": 75,
+    "ust_yuzde": 90,
+    "tur": "RI"
+   },
+   "kaynak": "PMID 31486806 (PMC6276649)",
+   "okuma": "tam_metin"
+  },
+  "vienna_icsi_hasar": {
+   "deger": {
+    "competence_max_yuzde": 10,
+    "benchmark_max_yuzde": 5
+   },
+   "kaynak": "PMID 31486806 (PMC6276649)",
+   "okuma": "tam_metin",
+   "slaytta": false
+  },
+  "vienna_aylik": {
+   "deger": {
+    "siklik": "ideally on a monthly basis",
+    "baslangic_olgu": 30
+   },
+   "kaynak": "PMID 31486806 (PMC6276649)",
+   "okuma": "tam_metin"
+  },
+  "zaca_tgbdr": {
+   "deger": {
+    "le39_yuzde": 45.5,
+    "ge40_yuzde": 33.4,
+    "n_siklus": 862
+   },
+   "kaynak": "PMID 35338418",
+   "okuma": "ozet"
+  },
+  "kpi_taban": {
+   "deger": 0.75,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json gercek_parametreler.taban_oran",
+   "okuma": "sentetik"
+  },
+  "kpi_kayma": {
+   "deger": {
+    "hafta": 70,
+    "oran": 0.69
+   },
+   "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json",
+   "okuma": "sentetik"
+  },
+  "cusum_tekrar": {
+   "deger": {
+    "tekrar": 500,
+    "izlem_hafta": 34
+   },
+   "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json monte_carlo",
+   "okuma": "sentetik"
+  },
+  "cusum_yakalama": {
+   "deger": 96.6,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json monte_carlo.cusum.yakalama_orani",
+   "okuma": "sentetik",
+   "birim": "%"
+  },
+  "cusum_gecikme": {
+   "deger": 10.0,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json monte_carlo.cusum.medyan_gecikme_hafta",
+   "okuma": "sentetik",
+   "birim": "hafta"
+  },
+  "shewhart_yakalama": {
+   "deger": 67.2,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json monte_carlo.shewhart.yakalama_orani",
+   "okuma": "sentetik",
+   "birim": "%"
+  },
+  "shewhart_gecikme": {
+   "deger": 14.0,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json monte_carlo.shewhart.medyan_gecikme_hafta",
+   "okuma": "sentetik",
+   "birim": "hafta"
+  },
+  "cusum_yanlis_alarm": {
+   "deger": 4.0,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json monte_carlo.cusum_yanlis_alarm_orani",
+   "okuma": "sentetik",
+   "birim": "%"
+  },
+  "shewhart_yanlis_alarm": {
+   "deger": 1.8,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json monte_carlo.shewhart_yanlis_alarm_orani",
+   "okuma": "sentetik",
+   "birim": "%"
+  },
+  "cusum_once": {
+   "deger": 88.2,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json monte_carlo.cusum_once_veya_ayni",
+   "okuma": "sentetik",
+   "birim": "%"
+  },
+  "cusum_tek_ornek_gecikme": {
+   "deger": 6,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json erken_uyari.cusum_gecikme_hafta (Shewhart: yakalanmadı)",
+   "okuma": "sentetik",
+   "birim": "hafta"
+  },
+  "funnel_genel": {
+   "deger": 71.4,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json funnel.genel_oran",
+   "okuma": "sentetik",
+   "birim": "%"
+  },
+  "funnel_F_ham": {
+   "deger": 68.9,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json funnel.embriyologlar.F.ham",
+   "okuma": "sentetik",
+   "birim": "%"
+  },
+  "funnel_F_ayarli": {
+   "deger": 75.9,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json funnel.embriyologlar.F.ayarli",
+   "okuma": "sentetik",
+   "birim": "%"
+  },
+  "funnel_F_n_yas": {
+   "deger": {
+    "n": 90,
+    "yas_ort": 39.9
+   },
+   "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json",
+   "okuma": "sentetik"
+  },
+  "funnel_E_ham": {
+   "deger": 62.8,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json funnel.embriyologlar.E.ham",
+   "okuma": "sentetik",
+   "birim": "%"
+  },
+  "funnel_E_ayarli": {
+   "deger": 62.5,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json funnel.embriyologlar.E.ayarli",
+   "okuma": "sentetik",
+   "birim": "%"
+  },
+  "funnel_E_n": {
+   "deger": 610,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json",
+   "okuma": "sentetik"
+  },
+  "funnel_sinir_disi": {
+   "deger": {
+    "ham": [
+     "E"
+    ],
+    "ayarli": [
+     "E"
+    ],
+    "sinir_yuzde": 99.8
+   },
+   "kaynak": "/home/claude/sunum/analiz/sonuc_kpi/sonuclar_kpi.json",
+   "okuma": "sentetik"
+  },
+  "gorsel_kendi_lab_auc": {
+   "deger": 0.954,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_gorsel/sonuclar_gorsel.json ince_ayar.hazir_model_kendi_labinda_auc",
+   "okuma": "sentetik"
+  },
+  "gorsel_baska_lab_auc": {
+   "deger": 0.509,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_gorsel/sonuclar_gorsel.json ince_ayar.auc[0] (yerel_n=0)",
+   "okuma": "sentetik"
+  },
+  "gorsel_25_etiket_auc": {
+   "deger": 0.835,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_gorsel/sonuclar_gorsel.json ince_ayar.auc[1] (yerel_n=25)",
+   "okuma": "sentetik"
+  },
+  "gorsel_400_etiket_auc": {
+   "deger": 0.886,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_gorsel/sonuclar_gorsel.json ince_ayar.auc[5] (yerel_n=400)",
+   "okuma": "sentetik"
+  },
+  "qc_taban_uyum": {
+   "deger": 76.7,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_gorsel/sonuclar_gorsel.json kalite_kontrol.taban_uyum",
+   "okuma": "sentetik",
+   "birim": "%",
+   "sahne": "yedek Y1"
+  },
+  "qc_en_dusuk": {
+   "deger": 23.3,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_gorsel/sonuclar_gorsel.json kalite_kontrol.degisim_sonrasi_en_dusuk",
+   "okuma": "sentetik",
+   "birim": "%",
+   "sahne": "yedek Y1"
+  },
+  "qc_haftalar": {
+   "deger": {
+    "kamera_degisim": 19,
+    "alarm": 19,
+    "ince_ayar": 21,
+    "etiket": 90
+   },
+   "kaynak": "/home/claude/sunum/analiz/sonuc_gorsel/sonuclar_gorsel.json",
+   "okuma": "sentetik",
+   "sahne": "yedek Y1"
+  },
+  "qc_son8": {
+   "deger": 73.3,
+   "kaynak": "/home/claude/sunum/analiz/sonuc_gorsel/sonuclar_gorsel.json kalite_kontrol.son_8_hafta_uyum",
+   "okuma": "sentetik",
+   "birim": "%",
+   "sahne": "yedek Y1"
+  },
+  "dogrulama_kohort": {
+   "deger": {
+    "hasta": 700,
+    "siklus": 1065,
+    "embriyo": 4428
+   },
+   "kaynak": "/home/claude/sunum/analiz/sonuc_slayt/sonuclar.json",
+   "okuma": "sentetik",
+   "sahne": "yedek Y2"
+  },
+  "dogrulama_gbm_auc": {
+   "deger": {
+    "rastgele": 0.686,
+    "hasta_gruplu": 0.646,
+    "hasta_gruplu_ga": [
+     0.629,
+     0.66
+    ],
+    "zamansal": 0.667
+   },
+   "kaynak": "/home/claude/sunum/analiz/sonuc_slayt/sonuclar.json",
+   "okuma": "sentetik",
+   "sahne": "yedek Y2"
+  },
+  "dogrulama_lr_auc": {
+   "deger": {
+    "rastgele": 0.706,
+    "hasta_gruplu": 0.704,
+    "zamansal": 0.699
+   },
+   "kaynak": "/home/claude/sunum/analiz/sonuc_slayt/sonuclar.json",
+   "okuma": "sentetik",
+   "sahne": "yedek Y2"
+  }
+ },
+ "demo_kpi": {
+  "veri_kaynagi": "SENTETIK",
+  "seed": 2027,
+  "gercek_parametreler": {
+   "hafta_sayisi": 104,
+   "haftalik_ort_vaka": 40,
+   "taban_oran": 0.75,
+   "kayma_haftasi": 70,
+   "kayma_sonrasi_oran": 0.69,
+   "cusum_alternatif": 0.7,
+   "cusum_esik_h": 4.5,
+   "embriyolog_dusuk_etki_logodds": -0.45,
+   "yas_beta": -0.06
+  },
+  "erken_uyari": {
+   "taban_oran_tahmini": 0.7431279620853081,
+   "kayma_haftasi": 70,
+   "shewhart_gecikme_hafta": null,
+   "shewhart_yanlis_alarm_ay": 0,
+   "cusum_gecikme_hafta": 6,
+   "cusum_yanlis_alarm": 0,
+   "cusum_esik": 4.5,
+   "gercek_taban": 0.75,
+   "gercek_kayma_sonrasi": 0.69,
+   "dusus_puan": 6.0
+  },
+  "monte_carlo": {
+   "tekrar": 500,
+   "izleme_suresi_hafta": 34,
+   "shewhart": {
+    "yakalama_orani": 0.672,
+    "medyan_gecikme_hafta": 14.0
+   },
+   "cusum": {
+    "yakalama_orani": 0.966,
+    "medyan_gecikme_hafta": 10.0
+   },
+   "shewhart_yanlis_alarm_orani": 0.018,
+   "cusum_yanlis_alarm_orani": 0.04,
+   "cusum_once_veya_ayni": 0.882
+  },
+  "funnel": {
+   "genel_oran": 0.7137931034482758,
+   "embriyologlar": {
+    "A": {
+     "n": 420,
+     "ham": 0.7380952380952381,
+     "ayarli": 0.735627787000664,
+     "yas_ort": 34.17747258549124
+    },
+    "B": {
+     "n": 380,
+     "ham": 0.7526315789473684,
+     "ayarli": 0.7471409732046784,
+     "yas_ort": 33.95031979458499
+    },
+    "C": {
+     "n": 300,
+     "ham": 0.76,
+     "ayarli": 0.7417170490545599,
+     "yas_ort": 32.837933932227216
+    },
+    "D": {
+     "n": 520,
+     "ham": 0.7442307692307693,
+     "ayarli": 0.7527881677367312,
+     "yas_ort": 35.11988340609661
+    },
+    "E": {
+     "n": 610,
+     "ham": 0.6278688524590164,
+     "ayarli": 0.625183985871875,
+     "yas_ort": 34.13524515443647
+    },
+    "F": {
+     "n": 90,
+     "ham": 0.6888888888888889,
+     "ayarli": 0.758917934782999,
+     "yas_ort": 39.86880373201437
+    }
+   },
+   "sinirlar_yuzde": [
+    95,
+    99.8
+   ],
+   "sinir_z": [
+    1.96,
+    3.09
+   ],
+   "gercek_dusuk": "E",
+   "ileri_yas_hasta": "F",
+   "sinir_disi_ham": [
+    "E"
+   ],
+   "sinir_disi_ayarli": [
+    "E"
+   ]
+  }
+ },
+ "demo_gorsel": {
+  "veri_kaynagi": "SENTETIK",
+  "seed": 2027,
+  "etiket_gurultusu": 0.08,
+  "lab_kosullari": {
+   "A": {
+    "kontrast": 1.0,
+    "parlaklik": 0.0,
+    "egim": 0.0,
+    "bulaniklik": 0.7,
+    "olcek": 1.0,
+    "gurultu": 0.05
+   },
+   "B": {
+    "kontrast": 0.65,
+    "parlaklik": 0.18,
+    "egim": 0.35,
+    "bulaniklik": 1.3,
+    "olcek": 1.12,
+    "gurultu": 0.08
+   },
+   "C": {
+    "kontrast": 0.55,
+    "parlaklik": -0.05,
+    "egim": -0.45,
+    "bulaniklik": 1.0,
+    "olcek": 0.95,
+    "gurultu": 0.1
+   }
+  },
+  "ince_ayar": {
+   "hazir_model_kendi_labinda_auc": 0.953699572822738,
+   "yerel_n": [
+    0,
+    25,
+    50,
+    100,
+    200,
+    400
+   ],
+   "auc": [
+    0.5088670724018345,
+    0.8348051614705463,
+    0.8351578857321776,
+    0.8524229868256997,
+    0.8680304695073315,
+    0.8861081982648178
+   ],
+   "dengeli_dogruluk": [
+    0.5,
+    0.7134086278337588,
+    0.7211162256818635,
+    0.7487296070304801,
+    0.7587804820565422,
+    0.7786808242117755
+   ],
+   "hazir_model_pozitif_orani": 0.0,
+   "tekrar": 5,
+   "not_": "ölçütler gürültüsüz gerçek etikete göre; eğitim etiketleri %8 gözlemci gürültülü"
+  },
+  "kalite_kontrol": {
+   "hafta": 40,
+   "kamera_degisim_haftasi": 19,
+   "alarm_haftasi": 19,
+   "ince_ayar_haftasi": 21,
+   "taban_uyum": 0.7666666666666668,
+   "degisim_sonrasi_en_dusuk": 0.23333333333333334,
+   "son_8_hafta_uyum": 0.7333333333333334,
+   "haftalik_embriyo": 30,
+   "ince_ayar_etiket_sayisi": 90,
+   "ewma_lambda": 0.3,
+   "alarm_payi": 0.08
+  }
+ },
+ "demo_dogrulama": {
+  "n_embriyo": 4428,
+  "n_siklus": 1065,
+  "n_hasta": 700,
+  "olay_orani": 0.505420054200542,
+  "embriyo_basina_hasta_ort": 6.325714285714286,
+  "ci": {
+   "yas_c": {
+    "beta_naif": -0.07831343178473353,
+    "beta_gee": -0.07725577434897997,
+    "ci_naif": [
+     -0.09346961630342905,
+     -0.06315724726603801
+    ],
+    "ci_gee": [
+     -0.09514275493701035,
+     -0.059368793760949584
+    ],
+    "genislik_orani": 1.1801770139421541
+   },
+   "d3_fragmantasyon": {
+    "beta_naif": -0.09772784325076686,
+    "beta_gee": -0.08395138977819343,
+    "ci_naif": [
+     -0.11069212943516622,
+     -0.0847635570663675
+    ],
+    "ci_gee": [
+     -0.09723951182044799,
+     -0.07066326773593887
+    ],
+    "genislik_orani": 1.0249790735293154
+   },
+   "d3_morfoloji": {
+    "beta_naif": 0.22289552777433624,
+    "beta_gee": 0.25852730614274955,
+    "ci_naif": [
+     0.15429501365655376,
+     0.29149604189211875
+    ],
+    "ci_gee": [
+     0.19043021437506125,
+     0.32662439791043785
+    ],
+    "genislik_orani": 0.9926615367746392
+   }
+  },
+  "icc_yaklasik_gee_rho": 0.09271743378416152,
+  "auc": {
+   "gbm": {
+    "ad": "Gradyan artırma",
+    "rastgele": 0.6857684413268532,
+    "hasta_gruplu": 0.6455055067921864,
+    "hasta_gruplu_ga": [
+     0.6288065975588217,
+     0.6602061605807503
+    ],
+    "zamansal": 0.6672820087205666
+   },
+   "lr": {
+    "ad": "Lojistik regresyon",
+    "rastgele": 0.7055212783755881,
+    "hasta_gruplu": 0.7035472800649635,
+    "hasta_gruplu_ga": [
+     0.6865941699996123,
+     0.7168837323063095
+    ],
+    "zamansal": 0.6992365690154426
+   }
+  },
+  "kalibrasyon_zamansal_lr": {
+   "egim": 0.9062471476475061,
+   "kesisim_offset": 0.4069312754767974,
+   "brier": 0.22580999286139566
+  },
+  "zamansal_bolme_esik": 2023.5,
+  "tasarim_etkisi": 1.4937865616390773,
+  "etkin_n_embriyo": 2964.2789095259486,
+  "dca": {
+   "model_ustun_esik_min": 0.05,
+   "model_ustun_esik_max": 0.85
+  },
+  "gercek_parametreler": {
+   "kesisim": -0.15,
+   "yas_beta_yil_basina": -0.09,
+   "embriyo_kalitesi_beta": 0.8,
+   "hasta_sd": 0.8,
+   "siklus_sd": 0.4,
+   "zaman_kaymasi_2023_sonrasi": 0.35
+  },
+  "ozet": "Gradyan artırma: rastgele bölmede AUC 0.686, hasta-gruplu bölmede 0.646 (%95 GA 0.629–0.660), zamansal bölmede 0.667."
+ },
+ "depo": {
+  "commit": 341,
+  "gun": 32,
+  "commit_gunu": 26,
+  "surum_notu": 296
+ },
+ "metinden_sayilar": {
+  "bolum2.ag_yillik_siklus": [
+   77.0
+  ],
+  "bolum2.japonya_yanit_orani": [
+   56.0
+  ],
+  "bolum2.japonya_yz_araclari_icinde_idascore": [
+   63.2
+  ],
+  "bolum2.firma_orneklem_buyuklugu_aciklayan": [
+   33.3
+  ],
+  "bolum2.chang_benimseme_2022_2025": [
+   24.8,
+   53.2
+  ],
+  "bolum2.chang_yatirim_niyeti_2025": [
+   83.62
+  ],
+  "bolum2.chang_maliyet_engeli_2025": [
+   38.01
+  ],
+  "bolum5.depo_son_surum": [
+   6.266
+  ]
+ }
+}

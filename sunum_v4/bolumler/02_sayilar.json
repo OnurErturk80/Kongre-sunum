@@ -1,0 +1,40 @@
+{
+  "_not": "Bölüm 2 sayıları. okuma: ozet | tam_metin | web. Web sayıları slaytta 'firma/klinik beyanı, hakemli değil' etiketi taşır. dogrulama alanı web kaynakları için.",
+
+  "chloe_klinik_sayisi": {"deger": "100'den fazla klinik", "aynen": "more than 100 fertility clinics across North America, Europe, Asia-Pacific, and Latin America", "kaynak": "W1 https://firstfertility.com/press-release/fairtility-and-first-fertility-expand-strategic-partnership-to-deploy-chloe-across-multiple-ivf-laboratories/", "okuma": "web", "etiket": "firma/klinik beyanı, hakemli değil", "tarih": "2026-07-29", "dogrulama": "WebFetch 2026-11-14"},
+  "chloe_bolge_sayisi": {"deger": 4, "kaynak": "W1", "okuma": "web", "etiket": "firma/klinik beyanı, hakemli değil", "dogrulama": "WebFetch 2026-11-14"},
+  "magenta_ortak_klinik": {"deger": "300'den fazla klinik", "aynen": "Explore over 300 clinics worldwide.", "kaynak": "W2 https://futurefertility.com/en/partner-fertility-clinics/", "okuma": "web", "etiket": "firma/klinik beyanı, hakemli değil", "dogrulama": "WebFetch 2026-11-14", "uyari": "cümlede ürün adı geçmiyor; firmanın ortak klinik sayfası"},
+  "magenta_ulke_listesi": {"deger": 32, "kaynak": "W2", "okuma": "web", "etiket": "firma/klinik beyanı, hakemli değil", "dogrulama": "WebFetch 2026-11-14", "uyari": "sayfadaki ülke listesinden sayıldı; Türkiye ve Japonya listede görülmedi"},
+  "ag_klinik_sayisi": {"deger": 60, "aynen": "operates 60 clinics across 16 countries", "kaynak": "W3 https://futurelifegroup.com/en/press/18-futurelife-in-partnership-with-alife-health/", "okuma": "web", "etiket": "firma/klinik beyanı, hakemli değil", "tarih": "2026-05-05", "dogrulama": "WebFetch 2026-11-14"},
+  "ag_ulke_sayisi": {"deger": 16, "kaynak": "W3", "okuma": "web", "etiket": "firma/klinik beyanı, hakemli değil", "dogrulama": "WebFetch 2026-11-14", "uyari": "'Avrupa' ifadesi bu oturumda görülmedi"},
+  "ag_yillik_siklus": {"deger": "77.000'den fazla", "aynen": "performs more than 77,000 IVF cycles annually", "kaynak": "W3", "okuma": "web", "etiket": "firma/klinik beyanı, hakemli değil", "dogrulama": "WebFetch 2026-11-14"},
+  "turkiye_embriyo_secimi_baslangic": {"deger": 2022, "kaynak": "W4 (URL kayıtlı değil)", "okuma": "web", "etiket": "firma/klinik beyanı, hakemli değil", "dogrulama": "önceki oturumda tarayıcıda görüldü, 10 Kasım 2026", "not": "bir merkez; ad verilmez"},
+  "turkiye_yz_sperm_secimi_merkez": {"deger": 2, "kaynak": "W4 (URL kayıtlı değil)", "okuma": "web", "etiket": "firma/klinik beyanı, hakemli değil", "dogrulama": "önceki oturumda tarayıcıda görüldü, 10 Kasım 2026", "not": "iki merkez, farklı ürünler; ad verilmez"},
+  "hindistan_ag_klinik": {"deger": "100'den fazla klinik (Kasım 2022 duyurusu)", "kaynak": "W4 (URL kayıtlı değil)", "okuma": "web", "etiket": "firma/klinik beyanı, hakemli değil", "dogrulama": "önceki oturumda tarayıcıda görüldü, 10 Kasım 2026", "uyari": "güncel durum bilinmiyor"},
+  "ispanya_grup_klinik": {"deger": 7, "kaynak": "W4 (URL kayıtlı değil)", "okuma": "web", "etiket": "firma/klinik beyanı, hakemli değil", "dogrulama": "önceki oturumda tarayıcıda görüldü, 10 Kasım 2026"},
+  "abd_ag_sube": {"deger": "25+ şube (Stim Assist)", "kaynak": "W4 (URL kayıtlı değil)", "okuma": "web", "etiket": "firma/klinik beyanı, hakemli değil", "dogrulama": "önceki oturumda tarayıcıda görüldü, 10 Kasım 2026"},
+  "duyuru_ulke_sayisi_en_az": {"deger": 11, "kaynak": "W4 ülke listesi", "okuma": "web", "etiket": "firma/klinik beyanı, hakemli değil", "dogrulama": "önceki oturumda tarayıcıda görüldü, 10 Kasım 2026", "not": "ABD, Meksika, Kolombiya, İspanya, İngiltere, İsviçre, Avustralya, Japonya, Endonezya, Hindistan, Türkiye"},
+
+  "japonya_davet_tesis": {"deger": 616, "kaynak": "PMID 39493437, DOI 10.1016/j.xagr.2024.100397", "okuma": "tam_metin"},
+  "japonya_yanit_tesis": {"deger": 345, "kaynak": "PMID 39493437", "okuma": "tam_metin"},
+  "japonya_yanit_orani": {"deger": "%56.0", "kaynak": "PMID 39493437", "okuma": "tam_metin"},
+  "japonya_tlt_tesis": {"deger": 195, "yuzde": "%56.5 (195/345); özet ve key findings %54.6", "kaynak": "PMID 39493437", "okuma": "tam_metin", "uyari": "makale içi tutarsızlık"},
+  "japonya_tlt_ile_embriyo_degerlendirme": {"deger": 184, "yuzde": "%94.3 (184/195)", "kaynak": "PMID 39493437", "okuma": "tam_metin"},
+  "japonya_tlt_artı_yz_skor_tesis": {"deger": 57, "yuzde": "%31.0 (payda 184)", "kaynak": "PMID 39493437", "okuma": "tam_metin"},
+  "japonya_yz_araclari_icinde_idascore": {"deger": "%63.2", "aynen": "the intelligence data analysis score (63.2%) had the highest utilization rate", "kaynak": "PMID 39493437", "okuma": "tam_metin"},
+  "japonya_yz_tesis_yanit_verenlere_orani": {"deger": "≈ 1/6 (57/345)", "kaynak": "PMID 39493437 sayılarından hesap", "okuma": "tam_metin", "not": "hesaplanmış; yalnız sunucu notunda"},
+
+  "uluslararasi_anket_yanit": {"deger": 702, "kaynak": "PMID 39939196, DOI 10.1016/j.rbmo.2024.104435", "okuma": "ozet"},
+  "uluslararasi_anket_soru": {"deger": 32, "kaynak": "PMID 39939196", "okuma": "ozet"},
+  "uluslararasi_anket_tarih": {"deger": "17 Temmuz–31 Ağustos 2023", "kaynak": "PMID 39939196", "okuma": "ozet"},
+
+  "firma_sitesi_sayisi": {"deger": 21, "kaynak": "PMID 42923733, DOI 10.1093/hropen/hoag086", "okuma": "ozet"},
+  "firma_yz_araci_sayisi": {"deger": 30, "kaynak": "PMID 42923733", "okuma": "ozet"},
+  "firma_fayda_belirten": {"deger": "21/21 (%100)", "kaynak": "PMID 42923733", "okuma": "ozet"},
+  "firma_risk_acikca_belirten": {"deger": 0, "aynen": "no websites explicitly outlined potential risks associated with AI use", "kaynak": "PMID 42923733", "okuma": "ozet"},
+  "firma_orneklem_buyuklugu_aciklayan": {"deger": "%33.3 (n=7)", "kaynak": "PMID 42923733", "okuma": "ozet"},
+
+  "chang_benimseme_2022_2025": {"deger": "%24.8 → %53.2", "kaynak": "PMID 42769651 (Chang 2026, atıf no. 10)", "okuma": "tam_metin", "uyari": "ikincil aktarım; asıl anket DOĞRULANAMADI; slayta önerilmiyor"},
+  "chang_yatirim_niyeti_2025": {"deger": "%83.62", "kaynak": "PMID 42769651 (atıf no. 10)", "okuma": "tam_metin", "uyari": "asıl kaynak DOĞRULANAMADI; slayta önerilmiyor"},
+  "chang_maliyet_engeli_2025": {"deger": "%38.01", "kaynak": "PMID 42769651", "okuma": "tam_metin", "uyari": "asıl kaynak DOĞRULANAMADI; slayta önerilmiyor"}
+}
